@@ -215,6 +215,10 @@ Header Section
 /* ==========================
 Banner Section
 ========================== */
+.banner-overly-image{
+    scale: 1.1;
+    top: 32px;
+}
 .banner::before{
     content: '';
     background: var(--color-a-light);
