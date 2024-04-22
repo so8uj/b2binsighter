@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --color-a-dark:#2F9089;
+    --color-a-light: #e1f5f3;
+    --color-white-a: #fff;
+    --color-black-a: #111111;
+    --color-para-dark:#414747;
+    --color-para-light:#403B43;
+}
+/* ==========================
+CSS Reset
+========================== */
+*{
+  margin: 0;  
+  padding: 0;  
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+/* ==========================
+Colors and Variable
+========================== */
+.color-a-dark,.hover-color-a-dark:hover{
+    color: var(--color-a-dark);
+}
+.color-a-light,.hover-color-a-light:hover{
+    color: var(--color-a-light);
+}
+.color-white-a,.hover-color-white-a:hover{
+    color: var(--color-white-a);
+}
+.color-black-a,.hover-color-black-a:hover{
+    color: var(--color-black-a);
+}
+.color-para-dark,.hover-color-para-dark:hover{
+    color: var(--color-para-dark);
+}
+.color-para-light,.hover-color-para-light:hover{
+    color: var(--color-para-light);
+}
+
+.bg-a-dark, .hover-bg-a-dark{
+    background: var(--color-a-dark);
+}
+.bg-a-light, .hover-bg-a-light{
+    background: var(--color-a-light);
+}
+.bg-white-a, .hover-bg-white-a{
+    background: var(--color-white-a);
+}
+.bg--black-a, .hover-bg--black-a{
+    background: var(--color--black-a);
+}
+
+
+/* ==========================
+Reusable Elements
+========================== */
+.button{
+    font-weight: 600;
+    border: 1px solid;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: .3s ease;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 32px;
+}
+.button span {
+    padding: 0px 5px;
+}
+.button-sm{
+    height: 40px;
+}
+.button:hover {
+    padding-left: 32px;
+    padding-right: 16px;
+}
+.button-sm-x{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.button-sm-x:hover{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.button-lg{
+    height: 60px;
+}
+
+.button-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s ease;
+}
+.button-left-icon{
+    left: 0px;
+    opacity: 0;
+}
+.button-right-icon{
+    right: 16px;
+}
+
+.button:hover .button-left-icon{
+    left: 16px;
+    opacity: 1;
+}
+.button:hover .button-right-icon{
+    right: 0px;
+    opacity: 0;
+}
+
+.button-sm-x:hover .button-left-icon{
+    left: 10px;
+}
+.button-sm-x .button-right-icon{
+    right: 10px;
+}
+
+
+.button-black{
+    background: var(--color-black-a);
+    color: var(--color-white-a);
+}
+
+.button-black-tran{
+    background: transparent;
+    color: var(--color-black-a);
+}
+
+.ease-tran{
+    transition: .3s ease;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.sec-title{
+    font-size: 56px;
+}
+.z-1{
+    z-index: 1;
+}
+.z-m-1{
+    z-index: -1;
+}
+.op-p-6{
+    opacity: .6;
+}
+
+.shadow-main{
+    box-shadow: 6px 6px 30px 0px rgba(37, 37, 48, 15%);
+}
+
+/* ==========================
+Custom Specing and Font Sizes
+========================== */
+.py-20{
+    padding: 20px 0px;
+}
+.pt-90{
+    padding-top: 90px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.p-24-20{
+    padding: 24px 20px;
+}
+
+/* Margins */
+.mt-90{
+    margin-top: 90px;
+}
+/* Fonts */
+.font-12{
+    font-size: 12px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-64{
+    font-size: 64px;
+}
+
+
+/* ==========================
+Header Section
+========================== */
+.header{
+    border-bottom: 1px solid #252530;
+    box-shadow: 6px 6px 15px 0px rgba(37, 37, 48, 10%);
+}
+.custom-nav .nav-item:not(:last-child){
+    margin-right: 32px;
+}
+.custom-nav{
+    width: 50%;
+}
+.logo, .nav-buttons{
+    /* background: red; */
+    width: 25%;
+}
+
+/* ==========================
+Banner Section
+========================== */
+.banner::before{
+    content: '';
+    background: var(--color-a-light);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 85%;
+    top: 0;
+}
+input{
+    box-shadow: 6px 6px 30px 0px rgba(37, 37, 48, 15%);
+}
+input:focus{
+   outline: 1px solid var(--color-a-dark);
+}
+
+.banner-review-category {
+    background: #CFE7E4;
+    border-bottom: 0px;
+    display: inline-flex;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.banner-review-category-button{
+    font-weight: 600;
+    padding: 16px;
+    color: var(--color-black-a);
+    border-radius: 0px !important;
+    border: 0px !important;
+}
+.banner-review-category-button:hover{
+    color: var(--color-a-dark);
+}
+.banner-review-category-button.active{
+    color: var(--color-white-a) !important;
+    background-color: var(--color-black-a) !important;
+}
+.review-top{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(17, 17, 17,20%);
+}
+.banner-review-content p {
+    font-size: 15px;
+}
