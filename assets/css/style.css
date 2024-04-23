@@ -2,6 +2,7 @@
 :root{
     --color-a-dark:#2F9089;
     --color-a-light: #e1f5f3;
+    --color-a-light-2: #F2FAF9;
     --color-white-a: #fff;
     --color-black-a: #111111;
     --color-para-dark:#414747;
@@ -50,6 +51,9 @@ Colors and Variable
 }
 .bg-a-light, .hover-bg-a-light{
     background: var(--color-a-light);
+}
+.bg-a-light-2, .hover-bg-a-light-2{
+    background: var(--color-a-light-2);
 }
 .bg-white-a, .hover-bg-white-a{
     background: var(--color-white-a);
@@ -183,13 +187,21 @@ Custom Specing and Font Sizes
 .p-24-20{
     padding: 24px 20px;
 }
-
+.p-24{
+    padding: 24px;
+}
 /* Margins */
 .mt-90{
     margin-top: 90px;
 }
+.mt-25{
+    margin-top: 25px;
+}
 .mb-25{
     margin-bottom: 25px;
+}
+.mb-50{
+    margin-bottom: 50px;
 }
 /* Fonts */
 .font-12{
@@ -203,6 +215,9 @@ Custom Specing and Font Sizes
 }
 .font-22{
     font-size: 22px;
+}
+.font-56{
+    font-size: 56px;
 }
 .font-64{
     font-size: 64px;
@@ -298,4 +313,11 @@ input:focus{
 =========================  */
 .booking-cart-box{
     padding: 60px 30px;
+}
+.agency-partner-section .box {
+    border: 1px solid #E0E0E0;
+}
+.agency-partner-section .box p{
+    letter-spacing: -2%;
+    font-size: 19px;
 }
