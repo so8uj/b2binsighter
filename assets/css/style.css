@@ -54,8 +54,8 @@ Colors and Variable
 .bg-white-a, .hover-bg-white-a{
     background: var(--color-white-a);
 }
-.bg--black-a, .hover-bg--black-a{
-    background: var(--color--black-a);
+.bg-black-a, .hover-bg-black-a{
+    background: var(--color-black-a);
 }
 
 
@@ -162,6 +162,15 @@ Reusable Elements
 /* ==========================
 Custom Specing and Font Sizes
 ========================== */
+.py-120{
+    padding: 120px 0px;
+}
+.pt-120{
+    padding-top: 120px;
+}
+.pb-120{
+    padding-bottom: 120px;
+}
 .py-20{
     padding: 20px 0px;
 }
@@ -179,6 +188,9 @@ Custom Specing and Font Sizes
 .mt-90{
     margin-top: 90px;
 }
+.mb-25{
+    margin-bottom: 25px;
+}
 /* Fonts */
 .font-12{
     font-size: 12px;
@@ -188,6 +200,9 @@ Custom Specing and Font Sizes
 }
 .font-20{
     font-size: 20px;
+}
+.font-22{
+    font-size: 22px;
 }
 .font-64{
     font-size: 64px;
@@ -221,7 +236,7 @@ Banner Section
 }
 .banner::before{
     content: '';
-    background: var(--color-a-light);
+    background: url('../img/banner-bg.png') bottom / cover no-repeat ,var(--color-a-light);
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -262,4 +277,25 @@ input:focus{
 }
 .banner-review-content p {
     font-size: 15px;
+}
+.banner-review-box{
+    margin: 0px 12px;
+    box-shadow: 6px 6px 30px -9px rgba(37, 37, 48, 15%);
+}
+.review-sliders .slick-track{
+    padding: 20px 0px;
+}
+
+/* =========================
+    As Seen On Section
+=========================  */
+.own-profiles-company-images img:hover{
+    filter:contrast(0.5);
+}
+
+/* =========================
+    Book Section
+=========================  */
+.booking-cart-box{
+    padding: 60px 30px;
 }
