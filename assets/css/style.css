@@ -210,17 +210,26 @@ Custom Specing and Font Sizes
 .font-14{
     font-size: 14px;
 }
+.font-17{
+    font-size: 17px;
+}
 .font-20{
     font-size: 20px;
 }
 .font-22{
     font-size: 22px;
 }
+.font-48{
+    font-size: 48px;
+}
 .font-56{
     font-size: 56px;
 }
 .font-64{
     font-size: 64px;
+}
+.text-sring{
+    letter-spacing: -.4px;
 }
 
 
