@@ -7,6 +7,24 @@
     --color-black-a: #111111;
     --color-para-dark:#414747;
     --color-para-light:#403B43;
+    --color-orange:#E6840E;
+}
+
+::-webkit-scrollbar-track {
+    background: #c8cdcd;
+  }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-a-dark);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-black-a);;
 }
 /* ==========================
 CSS Reset
@@ -45,27 +63,58 @@ Colors and Variable
 .color-para-light,.hover-color-para-light:hover{
     color: var(--color-para-light);
 }
+.color-orange,.hover-color-orange:hover{
+    color: var(--color-orange);
+}
 
-.bg-a-dark, .hover-bg-a-dark{
+.bg-a-dark, .hover-bg-a-dark:hover{
     background: var(--color-a-dark);
 }
-.bg-a-light, .hover-bg-a-light{
+.bg-a-light, .hover-bg-a-light:hover{
     background: var(--color-a-light);
 }
-.bg-a-light-2, .hover-bg-a-light-2{
+.bg-a-light-2, .hover-bg-a-light-2:hover{
     background: var(--color-a-light-2);
 }
-.bg-white-a, .hover-bg-white-a{
+.bg-white-a, .hover-bg-white-a:hover{
     background: var(--color-white-a);
 }
-.bg-black-a, .hover-bg-black-a{
+.bg-black-a, .hover-bg-black-a:hover{
     background: var(--color-black-a);
 }
 
 
+.border-color-black,.hover-border-color-black:hover{
+    border-color: var(--color-black-a);
+}
+
+.hr-divider{
+    margin: 32px 0px;
+    color: rgb(64, 59, 67,20%);
+}
+
+.center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-button-sm{
+    width: 40px;
+    border: 1px solid rgb(64, 59, 67,10%);
+}
+
 /* ==========================
 Reusable Elements
 ========================== */
+.button-simple{
+    font-weight: 600;
+    border: 1px solid;
+    display: inline-block;
+    text-align: center;
+    transition: .3s ease;
+    padding: 16px 0px;
+    cursor: pointer;
+}
 .button{
     font-weight: 600;
     border: 1px solid;
@@ -94,6 +143,9 @@ Reusable Elements
 .button-sm-x:hover{
     padding-left: 20px;
     padding-right: 10px;
+}
+.button-md{
+    height: 50px;
 }
 .button-lg{
     height: 60px;
@@ -175,6 +227,9 @@ Custom Specing and Font Sizes
 .pb-120{
     padding-bottom: 120px;
 }
+.py-60{
+    padding: 60px 0px;
+}
 .py-20{
     padding: 20px 0px;
 }
@@ -189,6 +244,9 @@ Custom Specing and Font Sizes
 }
 .p-24{
     padding: 24px;
+}
+.p-30{
+    padding: 30px;
 }
 /* Margins */
 .mt-90{
@@ -258,14 +316,20 @@ Banner Section
     scale: 1.1;
     top: 32px;
 }
-.banner::before{
+.section-before-bg{
+    position: relative;
+    z-index: 1;
+}
+.section-before-bg::before{
     content: '';
-    background: url('../img/banner-bg.png') bottom / cover no-repeat ,var(--color-a-light);
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 85%;
     top: 0;
+}
+.banner::before{
+    background: url('../img/banner-bg.png') bottom / cover no-repeat ,var(--color-a-light);
 }
 input{
     box-shadow: 6px 6px 30px 0px rgba(37, 37, 48, 15%);
@@ -329,4 +393,39 @@ input:focus{
 .agency-partner-section .box p{
     letter-spacing: -2%;
     font-size: 19px;
+}
+
+/* =========================
+    About Section
+=========================  */
+.devider-icon-box{
+    width: 100px;
+}
+.sec-divider-with-icon::before{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background:#1A504C;
+}
+.about-section::before{
+    background: var(--color-a-dark);
+}
+
+
+/* =========================
+    About Section
+=========================  */
+.featured-box-logo{
+    width: 120px;
+}
+.agency-big-box .company-website-button{
+    width: 200px;
+}
+.normal-icon-img:hover{
+    filter: brightness(0);
 }
