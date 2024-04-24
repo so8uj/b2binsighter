@@ -12,4 +12,22 @@ $(document).ready(function(){
         slidesToScroll: 1,
     });
 
+
+    $('.showmore-button').click(function(e) {
+        e.preventDefault();
+        let target_this = $(this);
+        if (target_this.parent().find('.agency-box-hidden-part').hasClass('show')) {
+            target_this.parent().find('.agency-box-hidden-part').removeClass('show');
+            target_this.parent().find('.agency-box-hidden-part').slideUp(350);
+            target_this.find('.fa').addClass('fa-angle-down');
+            target_this.find('.fa').removeClass('fa-angle-up');
+        } else {
+            target_this.parent().find('.agency-box-hidden-part').addClass('show');
+            target_this.find('.fa').removeClass('fa-angle-down');
+            target_this.find('.fa').addClass('fa-angle-up');
+            target_this.parent().find('.agency-box-hidden-part').slideToggle(350);
+        }
+     });
+
+
 });

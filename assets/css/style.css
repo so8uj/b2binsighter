@@ -4,6 +4,7 @@
     --color-a-light: #e1f5f3;
     --color-a-light-2: #F2FAF9;
     --color-white-a: #fff;
+    --color-white-2: #F6F6F6;
     --color-black-a: #111111;
     --color-para-dark:#414747;
     --color-para-light:#403B43;
@@ -35,6 +36,9 @@ CSS Reset
 }
 a{
     text-decoration: none;
+}
+ul{
+    list-style: none;
 }
 html{
     scroll-behavior: smooth;
@@ -78,6 +82,9 @@ Colors and Variable
 }
 .bg-white-a, .hover-bg-white-a:hover{
     background: var(--color-white-a);
+}
+.bg-white-2, .hover-bg-white-2:hover{
+    background: var(--color-white-2);
 }
 .bg-black-a, .hover-bg-black-a:hover{
     background: var(--color-black-a);
@@ -131,6 +138,9 @@ Reusable Elements
 }
 .button-sm{
     height: 40px;
+}
+.button-xs{
+    height: 30px;
 }
 .button:hover {
     padding-left: 32px;
@@ -210,9 +220,18 @@ Reusable Elements
 .op-p-6{
     opacity: .6;
 }
+.op-p-75{
+    opacity: .75;
+}
 
 .shadow-main{
     box-shadow: 6px 6px 30px 0px rgba(37, 37, 48, 15%);
+}
+.badge{
+    padding: 8px 10px;
+}
+.border-main{
+    border: 1px solid rgba(65, 71, 71,10%);
 }
 
 /* ==========================
@@ -241,6 +260,9 @@ Custom Specing and Font Sizes
 }
 .p-24-20{
     padding: 24px 20px;
+}
+.p-20{
+    padding: 20px;
 }
 .p-24{
     padding: 24px;
@@ -289,7 +311,9 @@ Custom Specing and Font Sizes
 .text-sring{
     letter-spacing: -.4px;
 }
-
+.gap-y-24{
+    row-gap: 25px;
+}
 
 /* ==========================
 Header Section
@@ -428,4 +452,66 @@ input:focus{
 }
 .normal-icon-img:hover{
     filter: brightness(0);
+}
+
+/* =========================
+    Featured Agency
+=========================  */
+.agency-big-box ul li{
+    width: 50%;
+}
+.agency-box-hidden-part{
+    overflow: hidden;
+    display: none;
+}
+
+.agency-box-hidden-part tr td:not(:last-child){
+    padding-right:14px
+}
+.agency-box-hidden-part tr{
+    border-bottom: 1px solid rgba(64, 59, 67,10%);
+}
+.agency-box-hidden-part table thead tr td{
+    padding: 10px 0px
+}
+.agency-box-hidden-part table tbody tr td{
+    padding: 14px 0px
+}
+.agency-box-hidden-part .table-start-gap{
+    padding-left: 30px !important;
+}
+.agency-box-hidden-part .table-end-gap{
+    padding-right: 30px !important;
+}
+
+
+/* =========================
+    Service Agency
+=========================  */
+.service-category-buttons .service-category-button{
+    padding: 16px;
+    text-align: left;
+    background: transparent;
+    color: var(--color-black-a);
+    border: 1px solid rgba(65, 71, 71,10%);
+}
+.service-category-buttons .service-category-button.active{
+    background: var(--color-black-a);
+    border-color: var(--color-black-a);
+    color: var(--color-white-a);
+}
+
+/* =========================
+    Service Agency
+=========================  */
+.award-section{
+    background: url('../img/award-bg.png') center / cover no-repeat , var(--color-a-dark);
+}
+.saas-software-section .box{
+    border: 1px solid #fff;
+}
+.saas-software-section .box:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    border-color: var(--color-a-dark);
 }
