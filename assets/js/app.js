@@ -27,7 +27,26 @@ $(document).ready(function(){
             target_this.find('.fa').addClass('fa-angle-up');
             target_this.parent().find('.agency-box-hidden-part').slideToggle(350);
         }
-     });
+    });
 
+    $('.accordion-item').click(function(e){
+        e.preventDefault();
+        $('.accordion-item').removeClass('shadow-main');
+        $(this).addClass('shadow-main');;
+    });
+
+
+    const copy_review_html = $(".review-animation-wrapper").clone();
+    const copy_review_html_width = $(".review-animation-wrapper").width();
+    const add_html_container = $(".main-review-animation-container");
+    add_html_container.append(copy_review_html);
+
+    // copy_review_html.animate({ttransform:'rotate(240deg)'},5000);
+ 
 
 });
+
+// $(window).load(function(){
+//     // Review Animation
+    
+// });

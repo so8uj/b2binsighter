@@ -220,6 +220,9 @@ Reusable Elements
 .op-p-6{
     opacity: .6;
 }
+.op-p-8{
+    opacity: .8;
+}
 .op-p-75{
     opacity: .75;
 }
@@ -257,6 +260,9 @@ Custom Specing and Font Sizes
 }
 .pb-20{
     padding-bottom: 20px;
+}
+.pb-30{
+    padding-bottom: 30px;
 }
 .p-24-20{
     padding: 24px 20px;
@@ -314,7 +320,9 @@ Custom Specing and Font Sizes
 .gap-y-24{
     row-gap: 25px;
 }
-
+.gap-x-24{
+    column-gap: 24px;
+}
 /* ==========================
 Header Section
 ========================== */
@@ -502,6 +510,21 @@ input:focus{
 }
 
 /* =========================
+    Review Section
+=========================  */
+.review-animation-wrapper,.main-review-animation-container {
+    width: fit-content;
+}
+.review-user-image{
+    width: 56px;
+    height: 56px;
+}
+.single-review-row{
+    width: 312px;
+}
+
+
+/* =========================
     Service Agency
 =========================  */
 .award-section{
@@ -514,4 +537,70 @@ input:focus{
     transform: translateY(-5px);
     cursor: pointer;
     border-color: var(--color-a-dark);
+}
+
+.news-box:hover,.footer-social li:hover a i{
+    transform: translateY(-5px);
+}
+
+/* =========================
+    FAQ Section
+=========================  */
+.accordion-item{
+    overflow: hidden;
+    padding: 0px;
+    border: none !important;
+    border-radius: 12px !important;
+    transition: .3s ease;
+}
+.accordion-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.accordion-item:focus{
+    box-shadow: 6px 6px 30px 0px rgba(37, 37, 48, 15%);
+}
+.accordion-button{
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--color-white-a);
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--color-white-a);
+    box-shadow: none;
+}
+.accordion-body{
+    padding-top: 0px;
+    padding-right: 50px;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-radius: 12px !important;
+    
+}
+.accordion-button::after {
+    width: 22px;
+    height: 22px;
+    background-size:22px;
+    background-image: url('../img/icons/plus-circle.svg');
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../img/icons/minus-circle.svg');
+}
+
+/* =========================
+    Mini Contact
+=========================  */
+.mini-contact{
+    background: url('../img/contact-bg.png') center / cover no-repeat , var(--color-a-dark);
+}
+
+.main-footer{
+    padding-bottom: 60px;
+}
+.footer-top{
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgb(255, 255, 255,15%);
 }
