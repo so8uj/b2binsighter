@@ -604,3 +604,131 @@ input:focus{
     padding-bottom: 60px;
     border-bottom: 1px solid rgb(255, 255, 255,15%);
 }
+
+
+.d-block-xl{
+    display: none;
+}
+/* =========================
+    Responsive CSS
+=========================  */
+/* For 1366 */
+@media screen and (max-width:1390px){
+
+    .logo{
+        width: 15%;
+    } 
+    .custom-nav{
+        width: 65%;
+    }
+    .nav-buttons{
+        width: 30%;
+    }
+
+    .desk-mini-d-none,.d-none-2xl{
+        display: none;
+    }
+   
+    .contenr-between-2xl{
+        justify-content: space-between;
+    }
+    .font-64 {
+        font-size: 60px;
+    }
+    .banner-review-container .col-lg-8 {
+        width: 100%;
+    }
+    .booking-cart-box {
+        padding: 45px 30px;
+    }
+    .agency-partner-section img{
+        object-fit: cover;
+        object-position: right;
+    }
+    .agency-partner-section .box p{
+        font-size: 15px;
+    }
+    .write-review-section .col-lg-4{
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width:1201px){
+    .custom-nav .navbar-nav {
+        row-gap: 10px;
+        margin-top: 15px;
+    }
+    .d-none-xl{
+        display: none !important;
+    }
+    .d-block-xl{
+        display: block;
+    }
+    .logo{
+        width: 20%;
+    } 
+    .nav-buttons{
+        width: 30%;
+    }
+
+    .font-64 {
+        font-size: 38px;
+    }
+    .font-20 ,.fs-5 {
+        font-size: 16px !important;
+    }
+    .banner-review-content p,.font-17 {
+        font-size: 14px;
+    }
+    .font-14{
+        font-size: 13px;
+    }
+    .as-seen-company-profile-section img {
+        height: 40px;
+    }
+    .font-56 {
+        font-size: 48px;
+    }
+    .service-category-buttons .service-category-button {
+        font-size: 15px !important;
+    }
+    
+    .banner-review-category-button {
+        font-weight: 400;
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+    .mt-90{
+        margin-top: 50px;
+    }
+    
+    .agency-big-box .p-30 {
+        padding: 20px;
+    }
+    .agency-to-top .agency-box-logo {
+        width: 85px;
+    }
+    .badge {
+        font-size: 10px;
+    }
+    .service-category-container .col-lg-8 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .booking-cart-box {
+        padding: 30px;
+    }
+    .service-world-section .col-lg-8{
+        width: 58.33333333%;
+    }
+    .service-world-section .col-lg-4,.mini-contact .col-lg-4{
+        width: 41.66666667%;
+    }
+    .footer-box p{
+        font-size: 14px;
+    }
+}
