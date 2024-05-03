@@ -3,6 +3,7 @@
     --color-a-dark:#2F9089;
     --color-a-light: #e1f5f3;
     --color-a-light-2: #F2FAF9;
+    --color-b:#7854F7;
     --color-white-a: #fff;
     --color-white-2: #F6F6F6;
     --color-black-a: #111111;
@@ -54,6 +55,9 @@ Colors and Variable
 }
 .color-a-light,.hover-color-a-light:hover{
     color: var(--color-a-light);
+}
+.color-b,.hover-color-b:hover{
+    color: var(--color-b);
 }
 .color-white-a,.hover-color-white-a:hover{
     color: var(--color-white-a);
@@ -270,6 +274,10 @@ Custom Specing and Font Sizes
 .p-24-20{
     padding: 24px 20px;
 }
+.px-160{
+    padding-left: 160px;
+    padding-right: 160px;
+}
 .p-20{
     padding: 20px;
 }
@@ -311,6 +319,9 @@ Custom Specing and Font Sizes
 .font-22{
     font-size: 22px;
 }
+.font-30{
+    font-size: 30px;
+}
 .font-48{
     font-size: 48px;
 }
@@ -329,6 +340,22 @@ Custom Specing and Font Sizes
 .gap-x-24{
     column-gap: 24px;
 }
+
+.white-image{
+    filter: brightness(0) invert(1);
+}
+
+.vr-line{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    content: '';
+    background: rgba(64, 59, 67,10%);
+    left: 50%;
+    top:0;
+    transform: translateX(-50%);
+}
+
 /* ==========================
 Header Section
 ========================== */
@@ -369,6 +396,9 @@ Banner Section
     width: 100%;
     height: 85%;
     top: 0;
+}
+.section-before-bg-small::before{
+    height: 420px;
 }
 .banner::before{
     background: url('../img/banner-bg.png') bottom / cover no-repeat ,var(--color-a-light);
@@ -419,7 +449,7 @@ input:focus{
 /* =========================
     As Seen On Section
 =========================  */
-.own-profiles-company-images img:hover{
+.own-profiles-company-images a img:hover , .image-hover a img:hover{
     filter:contrast(0.5);
 }
 
@@ -643,16 +673,28 @@ input:focus{
 .single-page-category-tab-btn::before{
     width: 100%;
     height: 3px;
-    background: rgb(17, 17, 17,10%);
+    background: transparent;
     content: '';
     position: absolute;
     left: 0;
     bottom: -3px;
     transition: .2s ease;
 }
+.research-page-tab .single-page-category-tab-btn::before{
+    bottom: -2px;
+    height: 2px;
+}
 .single-page-category-tab-btn.active::before, .single-page-category-tab-btn:hover:before{
     background: var(--color-a-dark);
 }
+
+.research-page-tab .single-page-category-tab-btn.active:before, .research-page-tab .single-page-category-tab-btn:hover:before{
+    background: #7854F7;
+}
+.research-page-tab .single-page-category-tab-btn{
+    color: var(--color-black-a) !important;
+}
+
 .single-page-category-tab-btn.active svg{
     fill: var(--color-a-dark);
 }
@@ -674,10 +716,8 @@ input:focus{
     border: 1px solid rgb(17, 17, 17,15%);
     height: 50px;
 }
-.select-wrapper{
-    width: 50px;
-}
-.product-fillter-options select{
+
+.select-wrapper select{
     position: relative;
     appearance: none;
     -webkit-appearance: none;
@@ -731,7 +771,7 @@ input.no-shadow{
 /* =========================
     Custom Pagination CSS
 =========================  */
-.pagination-nav .page-num .page-link,.goto-page-input{
+.pagination-nav .page-num .page-link,.goto-page-input,.box-48{
     height: 48px;
     width: 48px;
 }
@@ -792,6 +832,18 @@ input.no-shadow{
     margin-bottom: 16px;
 }
 
+.on-white-bg{
+    border-top-color: rgba(64, 59, 67,30%);
+}
+.socai-icon-team li img{
+    transition: .3s ease;
+}
+.socai-icon-team li:hover img{
+    transform: translateY(-5px);
+}
+.image-cover{
+    object-fit: cover;
+}
 /* =========================
     Responsive CSS
 =========================  */
