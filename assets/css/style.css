@@ -289,6 +289,9 @@ Custom Specing and Font Sizes
 .mb-25{
     margin-bottom: 25px;
 }
+.mt-50{
+    margin-top: 50px;
+}
 .mb-50{
     margin-bottom: 50px;
 }
@@ -330,6 +333,10 @@ Custom Specing and Font Sizes
 Header Section
 ========================== */
 .header{
+    /* position: sticky;
+    top: 0;
+    background: var(--color-white-a);
+    z-index: 999999; */
     border-bottom: 1px solid #252530;
     box-shadow: 6px 6px 15px 0px rgba(37, 37, 48, 10%);
 }
@@ -657,11 +664,133 @@ input:focus{
     border-top: 1px solid rgb(17, 17, 17,10%);
 }
 
+/* =========================
+    Product Options Left
+=========================  */
+.product-fillter-options{
+    border-right: 1px solid rgb(17, 17, 17,15%);
+}
+.product-fillter-options input[type=text], .product-fillter-options select{
+    border: 1px solid rgb(17, 17, 17,15%);
+    height: 50px;
+}
+.select-wrapper{
+    width: 50px;
+}
+.product-fillter-options select{
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.select-wrapper::before{
+    content: "\f107";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    z-index: 1;
+    color: var(--color-para-dark);
+}
 
 
+input.no-shadow{
+    box-shadow: none !important;
+}
+.search-fillter-box:not(:last-child){
+    margin-bottom: 32px;
+}
 
 
+/* =========================
+    Product Options Right
+=========================  */
+.input-icon-button .input-left-icon{
+    left: 20px;
+    transform: translateY(-50%);
+}
+.input-icon-button .input-button{
+    right: 4px;
+    transform: translateY(-50%);
+}
+.input-icon-button input{
+    height: 56px;
+    padding-left: 50px;
+}
+.input-icon-button input:focus{
+   outline: 1px solid var(--color-black-a) ;
+}
+.input-icon-button .icon-button-md{
+    width: 48px;
+    height: 48px;
+}
 
+/* =========================
+    Custom Pagination CSS
+=========================  */
+.pagination-nav .page-num .page-link,.goto-page-input{
+    height: 48px;
+    width: 48px;
+}
+.goto-page-input{
+    box-shadow: none;
+    border: 1px solid rgb(17, 17, 17,10%);
+}
+.page-item.disabled .page-link{
+    background-color: transparent !important;
+    color: var(--color-para-dark) !important;
+}
+.page-item.disabled .page-link svg{
+    stroke: var(--color-para-dark);
+}
+.page-item .page-link{
+    font-size: 18px;
+    border: 0px !important;
+    font-weight: bold;
+    color: var(--color-black-a) !important;
+    padding: 0px !important;
+}
+.page-item:first-child .page-link,.page-item:last-child .page-link{
+    font-size: 14px;
+    outline: 0px !important;
+    box-shadow: none;
+    background-color: transparent !important;
+}
+
+.page-item.active .page-link , .pagination-nav .page-num .page-link:hover{
+    background-color: var(--color-a-dark) !important;
+    color: var(--color-white-a) !important;
+}
+.page-item .page-link:hover{
+    background-color: transparent !important;
+    color: var(--color-a-dark) !important;
+}
+.page-item .page-link svg{
+    stroke: var(--color-black-a)
+}
+.page-item .page-link:hover svg{
+    stroke: var(--color-a-dark);
+}
+
+
+.input-2{
+    background: #267771;
+    height: 40px
+}
+.input-2::placeholder{
+    color: #fff;
+
+}
+
+.single-add-container{
+    height: 180px;
+}
+.single-add-container:not(:last-child){
+    margin-bottom: 16px;
+}
 
 /* =========================
     Responsive CSS
