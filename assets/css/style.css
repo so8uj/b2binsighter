@@ -252,6 +252,9 @@ Custom Specing and Font Sizes
 .py-60{
     padding: 60px 0px;
 }
+.pt-60{
+    padding-top: 60px;
+}
 .py-20{
     padding: 20px 0px;
 }
@@ -609,6 +612,57 @@ input:focus{
 .d-block-xl{
     display: none;
 }
+
+
+
+/* =========================
+    Single Page Category CSS
+=========================  */
+.cetgory-section-tab ul.nav-pills {
+    border-bottom: 3px solid rgb(17, 17, 17,10%) ;
+}
+.single-page-category-tab-btn{
+    padding: 16px 24px;
+    background-color: transparent !important;
+    color: rgba(64, 59, 67,70%) !important;
+    position: relative;
+}
+.single-page-category-tab-btn svg{
+    fill:  rgba(64, 59, 67,70%);
+}
+.single-page-category-tab-btn.active{
+    color: var(--color-a-dark) !important;
+}
+.single-page-category-tab-btn::before{
+    width: 100%;
+    height: 3px;
+    background: rgb(17, 17, 17,10%);
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: .2s ease;
+}
+.single-page-category-tab-btn.active::before, .single-page-category-tab-btn:hover:before{
+    background: var(--color-a-dark);
+}
+.single-page-category-tab-btn.active svg{
+    fill: var(--color-a-dark);
+}
+
+.single-page-category-products .agency-big-box ul li{
+    width: 33.33%;
+}
+.agency-compair{
+    border-top: 1px solid rgb(17, 17, 17,10%);
+}
+
+
+
+
+
+
+
 /* =========================
     Responsive CSS
 =========================  */
