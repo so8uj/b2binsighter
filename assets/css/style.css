@@ -967,3 +967,128 @@ input.no-shadow{
         font-size: 14px;
     }
 }
+.d-show-sm{
+    display: none;
+}
+@media screen and (max-width:992px){
+    .flex-warp-sm{
+        flex-wrap: wrap;
+    }
+    .d-none-sm {
+        display: none;
+    }
+
+    .py-120{
+        padding: 60px 0px;
+    }
+    .pt-120{
+        padding-top: 60px;
+    }
+    .pb-120{
+        padding-bottom: 60px;
+    }
+    .justify-center-sm{
+        justify-content: center !important;
+    }
+    .gap-12-sm{
+        gap: 12px;
+    }
+    .gap-y-24-sm{
+        row-gap: 24px;
+    }
+    .font-56 {
+        font-size: 36px;
+    }
+    .font-48 {
+        font-size: 28px;
+    }
+    .mt-0-sm{
+        margin-top: 0px !important;
+    }
+    .me-0-sm{
+        margin-right: 0px !important;
+    }
+    .ps-0-sm{
+        padding-left: 0px !important;
+    }
+    .pe-0-sm{
+        padding-right: 0px !important;
+    }
+    .mb-12{
+        margin-bottom: 12px;
+    }
+     
+    .service-world-section .col-lg-4, .mini-contact .col-lg-4,.write-review-section .col-lg-4,.service-category-container .col-lg-8 {
+        width: 100%;
+    }
+    .flex-column-reverse{
+        flex-direction: column-reverse;
+    }
+    .flex-colum-sm{
+        flex-direction: column;
+    }
+    .align-start-sm{
+        align-items: flex-start !important;
+    }
+    .text-start-sm{
+        text-align: left !important;
+    }
+    .d-show-sm{
+        display: block;
+    }
+    .banner-review-category{
+        background: transparent;
+        border-radius: unset;
+    }
+    .banner-review-category-button {
+        background: #CFE7E4;
+        border-radius: 30px !important;
+    }
+
+    
+}
+
+@media screen and (max-width:600px){
+    body{
+        font-size: 14px;
+    }
+    .agency-to-top {
+        flex-direction: column;
+    }
+    .agency-big-box .company-website-button{
+        justify-content: flex-start !important;
+        margin-top: 20px;
+    }
+    .agency-big-box ul li {
+        width: 100%;
+    }
+    .p-5{
+        padding: 30px !important;
+    }
+    .font-64 {
+        font-size: 34px;
+    }
+    .as-seen-company-profile-section img {
+        height: 30px;
+    }
+    .font-56,.font-48 {
+        font-size: 22px;
+    }
+    .font-20, .fs-5 {
+        font-size: 14px !important;
+    }
+    .overview-box {
+        width: 48%;
+        border: 1px solid var(--color-white-2);
+        padding: 15px;
+    }
+    .overview-box:last-child {
+        width: 100%;
+    }
+    .flex-warp-xs{
+        flex-wrap: wrap;
+    }
+    .gap-y-20-xs{
+        row-gap: 20px;
+    }
+}

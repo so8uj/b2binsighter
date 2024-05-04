@@ -22,6 +22,12 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 2,
                 }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                }
             }
         ]
     });
@@ -50,13 +56,6 @@ $(document).ready(function(){
     });
 
 
-    const copy_review_html = $(".review-animation-wrapper").clone();
-    const copy_review_html_width = $(".review-animation-wrapper").width();
-    const add_html_container = $(".main-review-animation-container");
-    add_html_container.append(copy_review_html);
-
-    // copy_review_html.animate({ttransform:'rotate(240deg)'},5000);
- 
 
 });
 
