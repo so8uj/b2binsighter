@@ -98,6 +98,9 @@ Colors and Variable
 .border-color-black,.hover-border-color-black:hover{
     border-color: var(--color-black-a);
 }
+.border-a-dark,.hover-border-a-dark:hover{
+    border-color: var(--color-a-dark);
+}
 
 .hr-divider{
     margin: 32px 0px;
@@ -844,6 +847,20 @@ input.no-shadow{
 .image-cover{
     object-fit: cover;
 }
+.verify-agency-box{
+    border: 1px solid #fff;
+}
+.verify-agency-box:hover{
+    box-shadow: none;
+   
+}
+.has-bottom-border li:not(:last-child){
+    border-bottom: 1px solid rgba(64, 59, 67,10%);
+    padding-bottom: 8px;
+}
+
+
+
 /* =========================
     Responsive CSS
 =========================  */
@@ -1021,7 +1038,7 @@ input.no-shadow{
     .service-world-section .col-lg-4, .mini-contact .col-lg-4,.write-review-section .col-lg-4,.service-category-container .col-lg-8 {
         width: 100%;
     }
-    .flex-column-reverse{
+    .flex-column-reverse-sm{
         flex-direction: column-reverse;
     }
     .flex-colum-sm{
