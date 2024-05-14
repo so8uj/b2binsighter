@@ -31,6 +31,22 @@ $(document).ready(function(){
             }
         ]
     });
+    $('.agency-ranking-slider').slick({
+        infinite: true,
+        arrows: true,
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive:[
+            {
+                breakpoint: 1381,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }
+            
+        ]
+    });
 
 
     $('.showmore-button').click(function(e) {

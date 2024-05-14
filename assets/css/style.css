@@ -243,6 +243,17 @@ Reusable Elements
 .border-main{
     border: 1px solid rgba(65, 71, 71,10%);
 }
+.bb-1{
+    border-bottom: 1px solid rgba(65, 71, 71,10%);
+}
+.slider-container{
+    width: 1340px;
+    margin: auto;
+}
+.para-w-618{
+    width: 618px;
+}
+
 
 /* ==========================
 Custom Specing and Font Sizes
@@ -255,6 +266,9 @@ Custom Specing and Font Sizes
 }
 .pb-120{
     padding-bottom: 120px;
+}
+.pb-100{
+    padding-bottom: 100px;
 }
 .py-60{
     padding: 60px 0px;
@@ -290,6 +304,9 @@ Custom Specing and Font Sizes
 .p-30{
     padding: 30px;
 }
+.p-40{
+    padding: 40px;
+}
 /* Margins */
 .mt-90{
     margin-top: 90px;
@@ -306,12 +323,24 @@ Custom Specing and Font Sizes
 .mb-50{
     margin-bottom: 50px;
 }
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
 /* Fonts */
+.fs-5{
+    font-size: 18px !important;
+}
 .font-12{
     font-size: 12px;
 }
 .font-14{
     font-size: 14px;
+}
+.font-15{
+    font-size: 15px;
 }
 .font-17{
     font-size: 17px;
@@ -321,6 +350,9 @@ Custom Specing and Font Sizes
 }
 .font-22{
     font-size: 22px;
+}
+.font-23{
+    font-size: 23.5px;
 }
 .font-30{
     font-size: 30px;
@@ -336,6 +368,9 @@ Custom Specing and Font Sizes
 }
 .text-sring{
     letter-spacing: -.4px;
+}
+.text-sring-lg{
+    letter-spacing: -1px;
 }
 .gap-y-24{
     row-gap: 25px;
@@ -862,7 +897,48 @@ input.no-shadow{
 
 
 /* =========================
-    Responsive CSS
+Agency Rankig Slider
+=========================  */
+.agency-slider-container{
+    height: 400px;
+}
+.agency-directory-banner::before{
+    background: var(--color-a-light);
+    height: 64%;
+}
+.agency-ranking-slider .slick-slide{
+    margin-right: 24px;
+}
+.agency-ranking-slider .slick-track{
+    padding: 20px 0px;
+}
+.agency-ranking-slider .slick-prev {
+    left: -35px;
+}
+.agency-ranking-slider .slick-next {
+    right: unset;
+    left: 1275px;
+}
+.agency-methodogoly-tab li{
+    width: 20%;
+}
+.agency-methodogoly-tab li button{
+    width: 100%;
+}
+
+
+.agency-methodogoly-tab .single-page-category-tab-btn.active::before, .agency-methodogoly-tab .single-page-category-tab-btn:hover:before {
+    background: var(--color-a-dark);
+}
+.agency-methodogoly-tab .single-page-category-tab-btn.active,.agency-methodogoly-tab .single-page-category-tab-btn:hover {
+    color: var(--color-a-dark) !important;
+}
+
+
+
+
+/* =========================
+Responsive CSS
 =========================  */
 /* For 1366 */
 @media screen and (max-width:1390px){
