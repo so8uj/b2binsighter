@@ -72,6 +72,12 @@ $(document).ready(function(){
     });
 
 
+    $('.custom-select-radio').click(function(){
+       
+        $('.custom-select-radio').removeClass('active-custom-radio-pricing');
+        $(this).addClass('active-custom-radio-pricing');
+    });
+
 
 });
 
