@@ -31,5 +31,9 @@
     <path d="M6.00016 11.1698L1.83016 6.99984L0.410156 8.40984L6.00016 13.9998L18.0002 1.99984L16.5902 0.589844L6.00016 11.1698Z" fill="#fff"/>
 </symbol>
 
+<symbol viewBox="0 0 14 2" fill="none" id="icon-line">
+    <path d="M1.16797 1H12.8346" stroke="#403B43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
 </defs>
 </svg>

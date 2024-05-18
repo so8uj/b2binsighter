@@ -79,6 +79,20 @@ $(document).ready(function(){
     });
 
 
+    $('.subemnu-left-menu-item').mouseover(function(){
+        var target_nav_tab = $(this).data('submenu-target');
+        var target_submenu_area = $(this).data('target-area');
+        
+        $(this).siblings().removeClass('active-sub');
+        $(this).addClass('active-sub');
+
+        $('#'+target_submenu_area+' .submenu-main-tab').removeClass('active-sub-inner');
+        $('#'+target_nav_tab).addClass('active-sub-inner');
+
+
+    });
+
+
 });
 
 // $(window).load(function(){

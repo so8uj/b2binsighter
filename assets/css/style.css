@@ -256,6 +256,9 @@ Reusable Elements
 .w-90{
     width: 90%;
 }
+.h-100{
+    height: 100%;
+}
 
 
 /* ==========================
@@ -384,8 +387,14 @@ Custom Specing and Font Sizes
 .text-sring-lg{
     letter-spacing: -1px;
 }
+.text-sring-xxl{
+    letter-spacing: -2.5px;
+}
 .gap-y-24{
     row-gap: 25px;
+}
+.gap-y-18{
+    row-gap: 18px;
 }
 .gap-x-24{
     column-gap: 24px;
@@ -412,13 +421,16 @@ Header Section
 .header{
     /* position: sticky;
     top: 0;
-    background: var(--color-white-a);
-    z-index: 999999; */
+    background: var(--color-white-a); */
+    z-index: 999;
     border-bottom: 1px solid #252530;
     box-shadow: 6px 6px 15px 0px rgba(37, 37, 48, 10%);
 }
 .custom-nav .nav-item:not(:last-child){
     margin-right: 32px;
+}
+.custom-nav .nav-item {
+    padding: 24px 0px;
 }
 .custom-nav{
     width: 50%;
@@ -427,6 +439,76 @@ Header Section
     /* background: red; */
     width: 25%;
 }
+
+header.header .container {
+    z-index: 99;
+}
+.header .navbar{
+    background: var(--color-white-a);
+}
+
+.fw-500{
+    font-weight: 500;
+}
+.custom-nav .nav-item:hover{
+    cursor: pointer;
+}
+.custom-nav .nav-item:hover a.nav-link{
+    color: var(--color-a-dark);
+}
+.dropdown-custom-menu{
+    left: 0px;
+    background: var(--color-white-a);
+    top: 73px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    border-radius: 16px;
+    box-shadow: 6px 6px 30px 0px rgba(37, 37, 48, 15%);
+    transition: .3s ease-in-out;
+}
+.custom-nav .nav-item:hover .dropdown-custom-menu{
+    /* top: 73px; */
+    opacity: 1;
+    visibility: visible;
+}
+.submenu-main-tab {
+    display: none;
+}
+.submenu-main-tab.active-sub-inner{
+    display: block;
+}
+.subemnu-left-menu-item{
+    position: relative;
+}
+.subemnu-left-menu-item.active-sub{
+    background: var(--color-a-dark);
+    color: var(--color-white-a);
+}
+.subemnu-left-menu-item::before{
+    background: var(--color-a-dark);
+    height: 20px;
+    width: 20px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    opacity: 0;
+    transform: translateY(-50%);
+    clip-path: polygon(10% 0, 50% 49%, 10% 100%, 0 100%, 17% 50%, 0 0);
+    transition: .2s linear;
+}
+.subemnu-left-menu-item.active-sub::before{
+    opacity: 1;
+    right: -25px;
+}
+.submenu-innter-items li{
+    width: 33.33%;
+}
+
+
+
+
 
 /* ==========================
 Banner Section
@@ -997,6 +1079,39 @@ Agency Rankig Slider
 }
 
 
+
+/* =========================
+Custom Table
+=========================  */
+.theme-custom-table .table-striped>tbody>tr:nth-of-type(odd)>* {
+    /* --bs-table-color-type: var(--bs-table-striped-color); */
+    --bs-table-bg-type: var(--color-a-light-2);
+}
+
+.theme-custom-table .table>:not(caption)>*>*{
+    border-bottom: 0px;
+    padding: 16px !important;
+}
+.theme-custom-table .table th{
+    font-weight: 600;
+}
+
+.custom-form-black input,.custom-form-black textarea{
+    background: #171717 !important;
+    padding: 12px 16px;
+    border: 1px solid rgba(255,255,255,10%);
+    color: var(--color-white-a);
+}
+.custom-form-black input:focus,.custom-form-black textarea:focus{
+    box-shadow: none;
+    border-color: var(--color-a-dark);
+    color: var(--color-white-a);
+}
+
+.hover-text-decoration:hover{
+    text-decoration: underline !important;
+    transition: .3s ease;
+}
 
 
 /* =========================
