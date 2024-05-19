@@ -10,6 +10,7 @@
     --color-para-dark:#414747;
     --color-para-light:#403B43;
     --color-orange:#E6840E;
+    --color-yellow:#FAAB36;
 }
 
 ::-webkit-scrollbar-track {
@@ -74,6 +75,9 @@ Colors and Variable
 .color-orange,.hover-color-orange:hover{
     color: var(--color-orange);
 }
+.color-yellow,.hover-color-yellow:hover{
+    color: var(--color-yellow);
+}
 
 .bg-a-dark, .hover-bg-a-dark:hover{
     background: var(--color-a-dark);
@@ -95,6 +99,9 @@ Colors and Variable
 }
 
 
+.b-1{
+    border: 1px solid;
+}
 .border-color-black,.hover-border-color-black:hover{
     border-color: var(--color-black-a);
 }
@@ -209,6 +216,15 @@ Reusable Elements
     color: var(--color-black-a);
 }
 
+.squire-button-sm{
+    width: 20px;
+    height: 20px;
+}
+
+.bg-tran{
+    background: transparent;
+}
+
 .ease-tran{
     transition: .3s ease;
 }
@@ -243,6 +259,7 @@ Reusable Elements
 .border-main{
     border: 1px solid rgba(65, 71, 71,10%);
 }
+
 .bb-1{
     border-bottom: 1px solid rgba(65, 71, 71,10%);
 }
@@ -291,6 +308,9 @@ Custom Specing and Font Sizes
 .pt-60{
     padding-top: 60px;
 }
+.py-40{
+    padding: 40px 0px;
+}
 .py-20{
     padding: 20px 0px;
 }
@@ -305,6 +325,9 @@ Custom Specing and Font Sizes
 }
 .p-24-20{
     padding: 24px 20px;
+}
+.p-36-20{
+    padding: 36px 20px;
 }
 .px-160{
     padding-left: 160px;
@@ -389,6 +412,9 @@ Custom Specing and Font Sizes
 }
 .text-sring-xxl{
     letter-spacing: -2.5px;
+}
+.gap-y-32{
+    row-gap: 32px;
 }
 .gap-y-24{
     row-gap: 25px;
@@ -1038,8 +1064,19 @@ input.no-shadow{
     padding-bottom: 8px;
 }
 
-
-
+.animation-up:hover{
+    transform: translateY(-8px);
+}
+.placeholder-white::placeholder{
+    color: var(--color-white-a);
+}
+.no-shadow{
+    box-shadow: none;
+}
+.active-table-of-content{
+    font-weight: 600;
+    color: var(--color-black-a);
+}
 /* =========================
 Agency Rankig Slider
 =========================  */
@@ -1077,6 +1114,21 @@ Agency Rankig Slider
 .agency-methodogoly-tab .single-page-category-tab-btn.active,.agency-methodogoly-tab .single-page-category-tab-btn:hover {
     color: var(--color-a-dark) !important;
 }
+.pricing-package-box{
+    border: 2px solid #fff;
+}
+.pricing-package-box.active-box{
+    border: 2px solid var(--color-a-dark);
+    position: relative;
+}
+.active-badge{
+    position: absolute;
+    left: 20px;
+    padding: 6px 20px;
+    border-radius: 8px;
+    top: -15px;
+    height: 30px;
+}
 
 
 
@@ -1087,13 +1139,21 @@ Custom Table
     /* --bs-table-color-type: var(--bs-table-striped-color); */
     --bs-table-bg-type: var(--color-a-light-2);
 }
+.theme-custom-table .table-active {
+    /* --bs-table-color-state: var(--bs-table-active-color); */
+    --bs-table-bg-state: var(--color-a-light-2);
+}
 
 .theme-custom-table .table>:not(caption)>*>*{
-    border-bottom: 0px;
     padding: 16px !important;
+    font-weight: 500;
+}
+.theme-custom-table .table tbody tr:last-child td{
+    border: none;
 }
 .theme-custom-table .table th{
     font-weight: 600;
+    font-size: 18px;
 }
 
 .custom-form-black input,.custom-form-black textarea{
@@ -1111,6 +1171,19 @@ Custom Table
 .hover-text-decoration:hover{
     text-decoration: underline !important;
     transition: .3s ease;
+}
+
+
+.single-item-blog-list:not(:last-child){
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(37, 37, 48, 15%);
+}
+
+.blog-navigation-arrow svg{
+    stroke: var(--color-a-dark);
+}
+.hover-icon-black:hover svg{
+    stroke: var(--color-black-a);
 }
 
 

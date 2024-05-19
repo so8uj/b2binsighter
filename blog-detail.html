@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/fav-icon.png" type="image/x-icon">
-    <title>B2Binsighter - Software Category Page</title>
+    <title>B2Binsighter - Blog Detail</title>
 
     
     <!-- Library CSS -->
@@ -505,979 +505,128 @@
     </header>
 
     <!-- =========================
-        Page Banner
+       Detail Blogs
     ========================= -->
-    <section class="pricing-page-banner py-80 bg-a-light">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-5">
-                    <div class="section-title">
-                        <h2 class="font-56 fw-bold mb-2">Find your perfect plan use our price estimator</h2>
-                        <p class="color-para-light fs-5 text-sring mb-4">Finding and hiring a professional agency that is a perfect fit for you is hard and takes time. But we simplified this process. We list agencies that provide specific services in various categories and undergo a stringent review process before being listed. All this so you can hire the best agency for your needs.</p>
-                        <a href="#" class="button button-md bg-black-a color-white-a fw-bold border-0"><span>Schedule a Call</span> 
-                            <i class="fa fa-arrow-right button-icon button-left-icon" aria-hidden="true"></i>
-                            <i class="fa fa-arrow-right button-icon button-right-icon" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="pricing-banner-form shadow-main bg-white-a p-20 rounded-3">
-                        <form action="">
-
-                            <div class="row row-gap-3 mb-3">
-
-                                <div class="col-sm-4">
-                                    <label for="pay-per-click" class="custom-select-radio hover-border-a-dark d-flex column-gap-2 border-main p-3 rounded-2 cursor-pointer align-items-center position-relative">
-                                        <div class="active-badge-icon position-absolute center-content"><svg><use xlink:href="./assets/icons/icon.svg#icon-check-white"></use></svg></div>
-                                        <input type="radio" name="type" class="d-none" id="pay-per-click">
-                                        <img src="./assets/img/icons/saas-category.svg" alt="Mobile icon" width="32px">
-                                        <p class="mb-0 fw-semibold font-14 w-90">Pay per click</p>
-                                    </label>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label for="sponsorships" class="custom-select-radio hover-border-a-dark hover-border-a-dark d-flex column-gap-2 border-main p-3 rounded-2 cursor-pointer align-items-center">
-                                        <div class="active-badge-icon position-absolute center-content"><svg><use xlink:href="./assets/icons/icon.svg#icon-check-white"></use></svg></div>
-                                        <input type="radio" name="type" class="d-none" id="sponsorships">
-                                        <img src="./assets/img/icons/saas-category.svg" alt="Mobile icon" width="32px">
-                                        <p class="mb-0 fw-semibold font-14 w-90">Sponsorships</p>
-                                    </label>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label for="premium-listing" class="custom-select-radio hover-border-a-dark d-flex column-gap-2 border-main p-3 rounded-2 cursor-pointer align-items-center">
-                                        <div class="active-badge-icon position-absolute center-content"><svg><use xlink:href="./assets/icons/icon.svg#icon-check-white"></use></svg></div>
-                                        <input type="radio" name="type" class="d-none" id="premium-listing">
-                                        <img src="./assets/img/icons/saas-category.svg" alt="Mobile icon" width="32px">
-                                        <p class="mb-0 fw-semibold font-14 w-90">Premium listing</p>
-                                    </label>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <label for="banded-content-solution" class="custom-select-radio hover-border-a-dark d-flex column-gap-2 border-main p-3 rounded-2 cursor-pointer align-items-center">
-                                        <div class="active-badge-icon position-absolute center-content"><svg><use xlink:href="./assets/icons/icon.svg#icon-check-white"></use></svg></div>
-                                        <input type="radio" name="type" class="d-none" id="banded-content-solution">
-                                        <img src="./assets/img/icons/saas-category.svg" alt="Mobile icon" width="32px">
-                                        <p class="mb-0 fw-semibold font-14 w-90">Branded content solutions</p>
-                                    </label>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label for="marketing-qualified-leads" class="custom-select-radio hover-border-a-dark d-flex column-gap-2 border-main p-3 rounded-2 cursor-pointer align-items-center">
-                                        <div class="active-badge-icon position-absolute center-content"><svg><use xlink:href="./assets/icons/icon.svg#icon-check-white"></use></svg></div>
-                                        <input type="radio" name="type" class="d-none" id="marketing-qualified-leads">
-                                        <img src="./assets/img/icons/saas-category.svg" alt="Mobile icon" width="32px">
-                                        <p class="mb-0 fw-semibold font-14 w-90">Marketing qualified leads</p>
-                                    </label>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label for="product-service-review" class="custom-select-radio hover-border-a-dark d-flex column-gap-2 border-main p-3 rounded-2 cursor-pointer align-items-center">
-                                        <div class="active-badge-icon position-absolute center-content"><svg><use xlink:href="./assets/icons/icon.svg#icon-check-white"></use></svg></div>
-                                        <input type="radio" name="type" class="d-none" id="product-service-review">
-                                        <img src="./assets/img/icons/saas-category.svg" alt="Mobile icon" width="32px">
-                                        <p class="mb-0 fw-semibold font-14 w-90">Product / service review</p>
-                                    </label>
-                                </div>
-
-                            </div>
-
-                            <div class="row mb-3">
-                                <div class="col-sm-6">
-                                    <label for="listing-name" class="form-label color-black-a">Category</label>
-                                    <select type="text" placeholder="Your software name" class="form-control normal-input normal-input-select" id="listing-name">
-                                        <option value="">Select category</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="listing-name" class="form-label color-black-a">Your listing name</label>
-                                    <input type="text" placeholder="Your software name" class="form-control normal-input" id="listing-name">
-                                </div>
-                            </div>
-
-                            <button class="button button-md bg-a-dark color-white-a fw-bold border-0"><span>Get Free Estimate</span> 
-                                <i class="fa fa-arrow-right button-icon button-left-icon" aria-hidden="true"></i>
-                                <i class="fa fa-arrow-right button-icon button-right-icon" aria-hidden="true"></i>
-                            </button>
-
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- =========================
-       Pricing Package Section
-    ========================= -->
-    <section class="pricing-package-overview py-120">
-        <div class="container">
-
-            <div class="section-title text-center mb-50">
-                <h2 class="font-56 fw-bold mb-2 text-sring-lg">Discover the unique value of our agency sponsorship packages</h2>
-                <p class="color-para-light fs-5">Organic Ranking Methodology ensures agencies have better control over how they rank and stand out against many competitors.</p>
-            </div>
-
-            <div class="row gap-y-24">
-
-                <div class="col-lg-4">
-                    <div class="normal-box bg-white-a rounded-3 p-40 text-center shadow-main">
-                        <img src="./assets/img/agency-review-box-1.png" alt="Agency Review Image" class="w-100">
-                        <h3 class="fw-bold font-23 color-black-a">Target reach</h3>
-                        <span class="color-para-light">By allowing to better distill and establish any agency’s specific core competencies</span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="normal-box bg-white-a rounded-3 p-40 shadow-main text-center">
-                        <img src="./assets/img/agency-review-box-2.png" alt="Agency Review Image" class="w-100">
-                        <h3 class="fw-bold font-23 color-black-a">Brand awareness</h3>
-                        <span class="color-para-light">Fairness in visibility, especially for smaller agencies that wish to reach potential clients</span>
-                        
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="normal-box bg-white-a rounded-3 p-40 shadow-main text-center">
-                        <img src="./assets/img/agency-review-box-3.png" alt="Agency Review Image" class="w-100">
-                        <h3 class="fw-bold font-23 color-black-a">B2B decision-makers</h3>
-                        <span class="color-para-light">By allowing to better distill and establish any agency’s specific core competencies</span>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="normal-box bg-white-a rounded-3 p-40 text-center shadow-main">
-                        <img src="./assets/img/agency-review-box-1.png" alt="Agency Review Image" class="w-100">
-                        <h3 class="fw-bold font-23 color-black-a">Visitor insights</h3>
-                        <span class="color-para-light">By allowing to better distill and establish any agency’s specific core competencies</span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="normal-box bg-white-a rounded-3 p-40 shadow-main text-center">
-                        <img src="./assets/img/agency-review-box-2.png" alt="Agency Review Image" class="w-100">
-                        <h3 class="fw-bold font-23 color-black-a">B2Binsighter marketplace</h3>
-                        <span class="color-para-light">Fairness in visibility, especially for smaller agencies that wish to reach potential clients</span>
-                        
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="normal-box bg-white-a rounded-3 p-40 shadow-main text-center">
-                        <img src="./assets/img/agency-review-box-3.png" alt="Agency Review Image" class="w-100">
-                        <h3 class="fw-bold font-23 color-black-a">Boost your sales</h3>
-                        <span class="color-para-light">By allowing to better distill and establish any agency’s specific core competencies</span>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- =========================
-       visitors insights Section
-    ========================= -->
-    <section class="py-120 bg-a-dark">
+    <section class="all-blog-section pt-60 pb-120">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
-                    <div class="section-title color-white-a">
-                        <h2 class="font-56 fw-bold mb-2">Get new qualified leads right from your dashboard!</h2>
-                        <p class="font-20 text-sring mb-4">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                        <a href="#" class="button button-md bg-black-a color-white-a fw-bold border-0"><span>Explore visitor insight</span> 
-                            <i class="fa fa-arrow-right button-icon button-left-icon" aria-hidden="true"></i>
-                            <i class="fa fa-arrow-right button-icon button-right-icon" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- =========================
-       Unlock Customised Section
-    ========================= -->
-    <section class="py-120">
-        <div class="container">
-            <div class="section-title text-center mb-50">
-                <h2 class="font-56 fw-bold mb-2 color-black-a">Unlock customized value: get a personalized estimate for Add-on services</h2>
-                <p class="fs-5 color-para-light text-sring mb-4">Organic Ranking Methodology ensures agencies have better control over how they rank and stand out against many competitors.</p>
-            </div>
+                <div class="col-lg-8">
+                    <div class="single-blog-detail">
+                        <a href="blogs.html" class="fw-bold color-a-dark hover-color-black-a ease-tran"><i class="pe-2 fa fa-arrow-left"></i> Back</a>
+                        <h3 class="fs-3 fw-bold hover-color-black-a mb-4 mt-2">Going Back to School - The Good Old School Days</h3>
 
-            <div class="p-60 bg-a-light-2 rounded-3">
-
-                <div class="service-category-container">
-                    <div class="row justify-content-between gap-y-24-sm align-items-center">
-                        <div class="col-lg-3">
-                            <div class="nav service-category-buttons flex-column row-gap-3 nav-pills me-3 me-0-sm" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    
-                                <button class="nav-link fw-semibold service-category-button active" id="v-pills-demand-generation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-demand-generation" type="button" role="tab" aria-controls="v-pills-demand-generation" aria-selected="true">Demand Generation</button>
-    
-                                <button class="nav-link fw-semibold service-category-button" id="v-pills-dem-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dem" type="button" role="tab" aria-controls="v-pills-dem" aria-selected="false" tabindex="-1">Drip Email Marketing</button>
-    
-                                <button class="nav-link fw-semibold service-category-button" id="v-pills-bads-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bads" type="button" role="tab" aria-controls="v-pills-bads" aria-selected="false" tabindex="-1">Banner Ads</button>
-    
-                                <button class="nav-link fw-semibold service-category-button" id="v-pills-interview-tab" data-bs-toggle="pill" data-bs-target="#v-pills-interview" type="button" role="tab" aria-controls="v-pills-interview" aria-selected="false" tabindex="-1">Interview</button>
-    
-                                <button class="nav-link fw-semibold service-category-button" id="v-pills-get-reviewed-tab" data-bs-toggle="pill" data-bs-target="#v-pills-get-reviewed" type="button" role="tab" aria-controls="v-pills-get-reviewed" aria-selected="false" tabindex="-1">Get Reviewed</button>
-    
-    
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="tab-content" id="v-pills-tabContent">
-    
-                                <div class="tab-pane fade show active" id="v-pills-demand-generation" role="tabpanel" aria-labelledby="v-pills-demand-generation-tab" tabindex="0">
-                                    <div class="row justify-content-between align-items-center">
-                                        
-                                        <div class="col-sm-6">
-                                            <div class="ps-5">
-                                                <h6 class="fw-bold mb-2 font-23">Grow your sales pipeline</h6>
-                                                <p class="color-para-light font-17 mb-4">To provide a fairer assessment of each agency’s performance, we consider the overall distribution of ratings for each agency using the Bayesian Statistical Method.</p>
-                                                <a href="#" class="button button-sm bg-black-a font-14 color-white-a fw-bold border-0"><span>Contact Us</span> 
-                                                    <i class="fa fa-arrow-right button-icon button-left-icon" aria-hidden="true"></i>
-                                                    <i class="fa fa-arrow-right button-icon button-right-icon" aria-hidden="true"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <div class="w-100 rounded-3" style="height: 220px; background: #d9d9d9;"></div>
-                                        </div>
-                                    </div>
+                        <div class="blog-infos d-flex gap-x-24 mb-4">
+                            <div class="author d-flex align-items-center">
+                                <img src="./assets/img/blog-avater.jpg" height="48px" width="48px" class="rounded-circle" alt="Author Image">
+                                <div class="ms-3">
+                                    <p class="mb-0 color-para-dark fw-500">Posted by</p>
+                                    <p class="mb-0 color-black-a fw-semibold">Colin Lucido</p>
                                 </div>
-    
-                                <div class="tab-pane fade" id="v-pills-dem" role="tabpanel" aria-labelledby="v-pills-dem-tab" tabindex="0">
-                                    <h2>Drip Email Marketing Content</h2>
-                                </div>
-    
-                                <div class="tab-pane fade" id="v-pills-bads" role="tabpanel" aria-labelledby="v-pills-bads-tab" tabindex="0">
-                                    <h2>Banner Ads Content</h2>
-                                </div>
-    
-                                <div class="tab-pane fade" id="v-pills-interview" role="tabpanel" aria-labelledby="v-pills-interview-tab" tabindex="0">
-                                    <h2>Interview Content</h2>
-                                </div>
-    
-                                <div class="tab-pane fade" id="v-pills-get-reviewed" role="tabpanel" aria-labelledby="v-pills-get-reviewed-tab" tabindex="0">
-                                    <h2>Get Reviewed Content</h2>
-                                </div>
-    
-    
-    
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- =========================
-      Pricing Package Section
-    ========================= -->
-    <section>
-        <div class="container">
-            <div class="section-title text-center mb-50">
-                <h2 class="font-56 fw-bold mb-2 color-black-a">Agency sponsorship packages</h2>
-                <p class="fs-5 color-para-light text-sring mb-4">Organic Ranking Methodology ensures agencies have better control over how they rank and stand out against many competitors.</p>
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-3">
-                    <div class="pricing-package-box  color-black-a h-100 rounded-3 p-36-20 bg-white-a shadow-main">
-                        <p class="fs-5 fw-bold mb-0">Starter</p>
-                        <span class="color-para-light">100k+ Customer</span>
-                        <div class="py-40">
-                            <p class="mb-0"><span class="fs-3 fw-bold">$71 </span> /month</p>
-                        </div>
-
-                        <p class="mb-2">Contact for Pricing</p>
-
-                        <button class="bg-tran mb-2 w-100 rounded-2 button-sm color-a-dark fw-semibold font-12 hover-bg-a-dark hover-color-white-a b-1 border-a-dark ease-tran">14 days free trial <i class="ps-2 fa fa-arrow-right"></i></button>
-                        <button class="w-100 rounded-2 hover-bg-black-a bg-a-dark b-1 button-sm color-white-a font-12 fw-semibold ease-tran">Buy Now <i class="ps-2 fa fa-arrow-right"></i></button>
-
-                        <div class="py-40">
-                            <span class="font-14">Best for small Agency</span> 
-                            <span>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                            </span>
-                        </div>
-
-
-                        <ul class="ps-0 has-border-12 d-flex flex-column row-gap-2 mb-40">
-        
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Old System: 5 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-                        </ul>
-
-                        <div>
-                            <a href="#" class="fw-semibold color-a-dark hover-color-black-a ease-tran"><u>View Comparison</u></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="pricing-package-box active-box color-black-a h-100 rounded-3 p-36-20 bg-white-a shadow-main">
-                        <span class="active-badge bg-a-dark color-white-a font-12 fw-semibold">Most Value</span>
-                        <p class="fs-5 fw-bold mb-0">Starter</p>
-                        <span class="color-para-light">100k+ Customer</span>
-                        <div class="py-40">
-                            <p class="mb-0"><span class="fs-3 fw-bold">$71 </span> /month</p>
-                        </div>
-
-                        <p class="mb-2">Contact for Pricing</p>
-
-                        <button class="bg-tran mb-2 w-100 rounded-2 button-sm color-a-dark fw-semibold font-12 hover-bg-a-dark hover-color-white-a b-1 border-a-dark ease-tran">14 days free trial <i class="ps-2 fa fa-arrow-right"></i></button>
-                        <button class="w-100 rounded-2 hover-bg-black-a bg-a-dark b-1 button-sm color-white-a font-12 fw-semibold ease-tran">Buy Now <i class="ps-2 fa fa-arrow-right"></i></button>
-
-                        <div class="py-40">
-                            <span class="font-14">Best for small Agency</span> 
-                            <span>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                            </span>
-                        </div>
-
-
-                        <ul class="ps-0 has-border-12 d-flex flex-column row-gap-2 mb-40">
-        
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Old System: 5 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-                        </ul>
-
-                        <div>
-                            <a href="#" class="fw-semibold color-a-dark hover-color-black-a ease-tran"><u>View Comparison</u></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="pricing-package-box  color-black-a h-100 rounded-3 p-36-20 bg-white-a shadow-main">
-                        <p class="fs-5 fw-bold mb-0">Starter</p>
-                        <span class="color-para-light">100k+ Customer</span>
-                        <div class="py-40">
-                            <p class="mb-0"><span class="fs-3 fw-bold">$71 </span> /month</p>
-                        </div>
-
-                        <p class="mb-2">Contact for Pricing</p>
-
-                        <button class="bg-tran mb-2 w-100 rounded-2 button-sm color-a-dark fw-semibold font-12 hover-bg-a-dark hover-color-white-a b-1 border-a-dark ease-tran">14 days free trial <i class="ps-2 fa fa-arrow-right"></i></button>
-                        <button class="w-100 rounded-2 hover-bg-black-a bg-a-dark b-1 button-sm color-white-a font-12 fw-semibold ease-tran">Buy Now <i class="ps-2 fa fa-arrow-right"></i></button>
-
-                        <div class="py-40">
-                            <span class="font-14">Best for small Agency</span> 
-                            <span>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                            </span>
-                        </div>
-
-
-                        <ul class="ps-0 has-border-12 d-flex flex-column row-gap-2 mb-40">
-        
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Old System: 5 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-                        </ul>
-
-                        <div>
-                            <a href="#" class="fw-semibold color-a-dark hover-color-black-a ease-tran"><u>View Comparison</u></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="pricing-package-box  color-black-a h-100 rounded-3 p-36-20 bg-white-a shadow-main">
-                        <p class="fs-5 fw-bold mb-0">Starter</p>
-                        <span class="color-para-light">100k+ Customer</span>
-                        <div class="py-40">
-                            <p class="mb-0"><span class="fs-3 fw-bold">$71 </span> /month</p>
-                        </div>
-
-                        <p class="mb-2">Contact for Pricing</p>
-
-                        <button class="bg-tran mb-2 w-100 rounded-2 button-sm color-a-dark fw-semibold font-12 hover-bg-a-dark hover-color-white-a b-1 border-a-dark ease-tran">14 days free trial <i class="ps-2 fa fa-arrow-right"></i></button>
-                        <button class="w-100 rounded-2 hover-bg-black-a bg-a-dark b-1 button-sm color-white-a font-12 fw-semibold ease-tran">Buy Now <i class="ps-2 fa fa-arrow-right"></i></button>
-
-                        <div class="py-40">
-                            <span class="font-14">Best for small Agency</span> 
-                            <span>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                                <i class="fa font-12 fa-star color-yellow"></i>
-                            </span>
-                        </div>
-
-
-                        <ul class="ps-0 has-border-12 d-flex flex-column row-gap-2 mb-40">
-        
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Old System: 5 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-
-                            <li class="color-para-light d-flex align-items-baseline">
-                                <div style="height: 16px; width: 16px;" class="me-2">
-                                    <svg width="100%" height="100%">
-                                        <use xlink:href="./assets/icons/icon.svg#icon-check"></use>
-                                    </svg>  
-                                </div>
-                                <span>Bayesian Method: 4.3 stars</span>
-                            </li>
-                        </ul>
-
-                        <div>
-                            <a href="#" class="fw-semibold color-a-dark hover-color-black-a ease-tran"><u>View Comparison</u></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- =========================
-      Pricing Table
-    ========================= -->
-    <section class="pt-60 pb-120">
-        <div class="container">
-
-            <div class="theme-custom-table">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Features</th>
-                            <th>Basic <br> <span class="fw-bold">$71 </span> <span class="fw-normal">/monthly</span></th>
-                            <th>Standard <br> <span class="fw-bold">$71 </span> <span class="fw-normal">/monthly</span></th>
-                            <th>Premium <br> <span class="fw-bold">$71 </span> <span class="fw-normal">/monthly</span></th>
-                            <th>Sponsorship <br> <span class="fw-bold">$71 </span> <span class="fw-normal">/monthly</span></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-
-                        <tr>
-                            <td class="text-start">Duration</td>
-                            <td>3 month</td>
-                            <td class="table-active">6 month</td>
-                            <td>9 month</td>
-                            <td>Lifetime</td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">Premium listing - listing above non paid members</td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg></td>
-                            <td class="table-active"><div class="center-content squire-button-sm rounded-circle bg-a-dark"><svg width="10px" height="10px"><use xlink:href="./assets/icons/icon.svg#icon-check-white"></use></svg></div></td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg></td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">Individual data</td>
-                            <td>20GB</td>
-                            <td class="table-active">20GB</td>
-                            <td>20GB</td>
-                            <td>20GB</td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">Support</td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg> </td>
-                            <td class="table-active"><div class="center-content squire-button-sm rounded-circle bg-a-dark"><svg width="10px" height="10px"><use xlink:href="./assets/icons/icon.svg#icon-check-white"></use></svg></div></td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg></td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">Automated workflows</td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg> </td>
-                            <td class="table-active"><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">200+ integrations</td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg> </td>
-                            <td class="table-active"><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                        </tr>
-
-                        <tr>
-                            <td class="text-start">Duration</td>
-                            <td>3 month</td>
-                            <td class="table-active">6 month</td>
-                            <td>9 month</td>
-                            <td>Lifetime</td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">Premium listing - listing above non paid members</td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg> </td>
-                            <td class="table-active"><div class="center-content squire-button-sm rounded-circle bg-a-dark"><svg width="10px" height="10px"><use xlink:href="./assets/icons/icon.svg#icon-check-white"></use></svg></div></td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg></td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">Individual data</td>
-                            <td>20GB</td>
-                            <td class="table-active">20GB</td>
-                            <td>20GB</td>
-                            <td>20GB</td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">Support</td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg> </td>
-                            <td class="table-active"><div class="center-content squire-button-sm rounded-circle bg-a-dark"><svg width="10px" height="10px"><use xlink:href="./assets/icons/icon.svg#icon-check-white"></use></svg></div></td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg></td>
-                            <td><svg width="15px" height="15px"><use xlink:href="./assets/icons/icon.svg#icon-check"></use></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">Automated workflows</td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg> </td>
-                            <td class="table-active"><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">200+ integrations</td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg> </td>
-                            <td class="table-active"><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                            <td><svg width="15px" height="2px"><use xlink:href="./assets/icons/icon.svg#icon-line"></use></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="text-start"></td>
-                            <td class="text-center">
-                                <button class="w-100 mb-1 rounded-2 hover-bg-black-a bg-a-light b-1 button-sm color-a-dark border-0 hover-color-white-a font-12 fw-semibold ease-tran">Buy Now <i class="ps-2 fa fa-arrow-right"></i></button>
-                                <span class="font-12 fw-bold color-black-a">14 days free trial</span>
-                            </td>
-                            <td class="text-center">
-                                <button class="w-100 rounded-2 hover-bg-black-a bg-a-dark b-1 button-sm color-white-a font-12 fw-semibold ease-tran mb-1">Buy Now <i class="ps-2 fa fa-arrow-right"></i></button>
-                                <span class="font-12 fw-bold color-black-a">14 days free trial</span>
-                            </td>
-                            <td class="text-center">
-                                <button class="w-100 mb-1 rounded-2 hover-bg-black-a bg-a-light b-1 button-sm color-a-dark border-0 hover-color-white-a font-12 fw-semibold ease-tran">Buy Now <i class="ps-2 fa fa-arrow-right"></i></button>
-                                <span class="font-12 fw-bold color-black-a">14 days free trial</span>
-                            </td>
-                            <td class="text-center">
-                                <button class="w-100 mb-1 rounded-2 hover-bg-black-a bg-a-light b-1 button-sm color-a-dark border-0 hover-color-white-a font-12 fw-semibold ease-tran">Buy Now <i class="ps-2 fa fa-arrow-right"></i></button>
-                                <span class="font-12 fw-bold color-black-a">14 days free trial</span>
-                            </td>
-                        </tr>
-                        
-                      </tbody>
-                </table>
-            </div>
-
-
-        </div>
-    </section>
-
-
-    <!-- =========================
-      Sponsorship From Section
-    ========================= -->
-    <section class="sponsor-ship-from bg-black-a py-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="color-white-a">
-                        <h2 class="font-56 fw-bold mb-2 text-sring-xxl">Agency sponsorship packages</h2>
-                        <p class="fs-5 mb-0">Organic Ranking Methodology ensures agencies have better control over how they rank and stand out against many competitors.</p>
-                    </div>
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5">
-                    <div class="sponsors-form">
-                        <form>
-                            <div class="custom-form-black color-white-a mb-3">
-                                <label for="name" class="form-label op-p-75">Full name*</label>
-                                <input type="text" class="form-control" id="name">
-                            </div>
-
-                            <div class="custom-form-black color-white-a mb-3">
-                                <label for="email" class="form-label op-p-75">Email*</label>
-                                <input type="text" class="form-control" id="email">
-                             </div>
-
-                            <div class="custom-form-black color-white-a mb-3">
-                                <label for="phone" class="form-label op-p-75">Phone*</label>
-                                <input type="text" class="form-control" id="phone">
-                             </div>
-                            
-                            <div class="custom-form-black color-white-a mb-3">
-                                <label for="website" class="form-label op-p-75">Website</label>
-                                <input type="text" class="form-control" id="website">
-                             </div>
-
-                            <div class="custom-form-black custom-form-black color-white-a mb-3">
-                                <label for="messsage" class="form-label op-p-75">Message*</label>
-                                <textarea class="form-control" id="messsage" rows="6"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <span class="color-white-a fe-se">This site is protected by reCAPTCHA and the Google <a href="#" class="color-a-dark fw-semibold hover-text-decoration">Privacy Policy</a> and <a href="#" class="color-a-dark fw-semibold hover-text-decoration">Terms of Service</a> apply.</span>
                             </div>
                             <div>
-                                <a href="#" class="button button-md bg-a-dark color-white-a fw-bold border-0"><span>Schedule a Call</span> 
-                                    <i class="fa fa-arrow-right button-icon button-left-icon" aria-hidden="true"></i>
-                                    <i class="fa fa-arrow-right button-icon button-right-icon" aria-hidden="true"></i>
-                                </a>
+                                <p class="mb-0 color-para-dark fw-500">Published</p>
+                                <p class="mb-0 color-black-a fw-semibold">May 03, 2021</p>
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="faq-section py-120 bg-a-light-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="text-center mb-50">
-                        <h2 class="font-56 fw-bold mb-2 text-sring-lg">Frequently asked questions</h2>
-                        <p class="fs-5 mb-0">Discover the most frequently asked questions' answers.</p>
-                    </div>
-
-
-                    <div class="faq-wrapper">
-
-                        <div class="accordion" id="accordionExample">
-
-                            <div class="accordion-item shadow-main">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Is there a free trial available?
-                                </button>
-                              </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body font-17 color-para-light">
-                                    Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.
-                                </div>
-                              </div>
+                            <div>
+                                <p class="mb-0 color-para-dark fw-500">Duration</p>
+                                <p class="mb-0 color-black-a fw-semibold">2 min read</p>
                             </div>
-    
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Can I change my plan later?
-                                </button>
-                              </h2>
-                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body font-17 color-para-light">
-                                    Can I change my plan later content
-                                </div>
-                              </div>
-                            </div>
-    
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    What is your cancellation policy?
-                                </button>
-                              </h2>
-                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body font-17 color-para-light">
-                                    What is your cancellation policy content
-                                </div>
-                              </div>
-                            </div>
-    
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Can other info be added to an invoice?
-                                </button>
-                              </h2>
-                              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body font-17 color-para-light">
-                                    Can other info be added to an invoice content
-                                </div>
-                              </div>
-                            </div>
-    
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    How does billing work?
-                                </button>
-                              </h2>
-                              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body font-17 color-para-light">
-                                    How does billing work content
-                                </div>
-                              </div>
-                            </div>
-    
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    How do I change my account email?
-                                </button>
-                              </h2>
-                              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body font-17 color-para-light">
-                                    How do I change my account email content
-                                </div>
-                              </div>
-                            </div>
-    
                         </div>
 
+                        <img src="./assets/img/blog-light-image.jpg" alt="Blog Image" class="w-100 rounded-3 mb-40">
+
+                        <div class="single-blog-des d-flex flex-column gap-y-24 mb-50">
+
+                            <div>
+                                <p class="fs-5 color-para-light text-sring  op-p-75">As the summer days gradually give way to the crisp autumn air, a familiar buzz fills the atmosphere. It's that time of the year again—the Back to School Season, a cherished milestone for students, parents, and educators alike. Memories of backpacks filled with fresh supplies, reunions with friends, and the promise of new beginnings flood our minds. <br><br>
+
+                                The back-to-school season also demands some shopping and planning. It is important to buy supplies for your child's new academic year. Back-to-school season can be stressful for both parents and students as it will be a schedule change for them after a break of a few months. So, along with shopping, won't it be great to get some exclusive entertainment to relax during those after-school hours. <br>
+                                        
+                                Another important thing to do during the back-to-school season is to get organized. This means creating a study schedule, setting up a homework station, and decluttering your backpack. Getting organized will help you be successful in the upcoming academic year. <br><br>
+                                        
+                                Amazon is introducing an exclusive Prime Membership for actively enrolled students. They are giving a 6-month free trial period, post which you will only have to pay half. It will give you access to prime services like free delivery, deals, Prime music & reading, Prime video, and much more only at $7.49 per month. Browse through the website to know more about the prime student membership benefits. <br>
+
+                                So, what are you waiting for? It’s time to get started on your back-to-school preparations!</p>
+                            </div>
+
+                            <div>
+                                <h3 class="font-23 color-black-a mb-2 pb-1 fw-semibold">What is Back to School Season?</h3>
+                                <p class="fs-5 color-para-light text-sring  op-p-75">Back to School Season marks the end of the vacation period and the beginning of a new academic year. It involves various preparations, events, and activities that help students and schools transition smoothly into the next phase of education.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="font-23 color-black-a mb-2 pb-1 fw-semibold">Prepare in Advance for Back to School Season</h3>
+                                <p class="fs-5 color-para-light text-sring  op-p-75">We recommend you shop in advance, to avoid the last-minute hassle. Check if your existing school supplies are in working condition. Make a back-to-school shopping list of things you need. We have listed a few essential school supplies below to help you choose better.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="font-23 color-black-a mb-2 pb-1 fw-semibold">Conclusion</h3>
+                                <p class="fs-5 color-para-light text-sring  op-p-75">Going back to school brings up many expectations among parents and kids. It can be, thus, overwhelming to choose the right supplies and the right school gear like notebooks, pens, bags, and binders. Take a look at our above list of school supplies to find the best ones. BestViewsReviews rates and recommends top-selling handheld vacuums and based on quality, durability, and features. <br>
+
+                                Do remember to start your free entertainment trial with Amazon Student Prime Membership. They say; some work and some play can make your day focuses on delivering the play part in the form of exclusive entertainment and shopping. <br>
+                                BestViewsReviews rates and reviews the best products on the basis of quality, convenience, and durability.</p>
+                            </div>
+                        </div>
+
+                        <div class="blog-navigation-arrow d-flex align-items-center justify-content-between">
+                            <a class="color-a-dark fw-semibold ease-tran hover-color-black-a hover-icon-black" href="#"><svg height="24px" width="24px" class="ease-tran" fill="transparent"><use xlink:href="./assets/icons/icon.svg#icon-arrow-left"></use></svg> Previous Post </a>
+                            <a class="color-a-dark fw-semibold ease-tran hover-color-black-a hover-icon-black" href="#">Next Post <svg height="24px" width="24px" class="ease-tran" fill="transparent"><use xlink:href="./assets/icons/icon.svg#icon-arrow-right"></use></svg></a>
+                        </div>
 
                     </div>
 
+                </div>
 
+                <div class="col-lg-4">
+                    <div class="ps-5 ms-3">
+                        <div class="asside-box mb-50">
+                            <h3 class="fs-3 fw-semibold color-black-a mb-4">Table of Content</h3>
+                            <ul class="ps-0 blog-table-of-content d-flex flex-column row-gap-2">
+                                <li><a class="color-para-dark hover-color-black-a ease-tran active-table-of-content" href="#">Terms of Service</a></li>
+                                <li><a class="color-para-dark hover-color-a-dark ease-tran" href="#">General terms</a></li>
+                                <li><a class="color-para-dark hover-color-a-dark ease-tran" href="#">Disclousers</a></li>
+                                <li><a class="color-para-dark hover-color-a-dark ease-tran" href="#">Privacy Policy</a></li>
+                                <li><a class="color-para-dark hover-color-a-dark ease-tran" href="#">Cookie Policy</a></li>
+                                <li><a class="color-para-dark hover-color-a-dark ease-tran" href="#">Security</a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="asside-box">
+                            <h3 class="fs-3 fw-semibold color-black-a mb-4">Featured</h3>
+                            <div class="d-flex flex-column gap-y-24">
+
+                                <div class="main-featured-blog-box-small animation-up ease-tran">
+                                    <a href="#">
+                                        <img src="./assets/img/blog-dark-image.jpg" class="w-100 rounded-3 mb-4 image-cover" height="240px" alt="Blog Image">
+                                        <p class="color-para-light fw-500 mb-2">By <span class="color-a-dark">Robert</span> | 2 min read</p>
+                                        <h3 class="color-black-a fs-5 fw-semibold">Brands Should Focus on ‘Pull’ Strategies to Attract Consumers</h3>
+                                    </a>
+                                </div>
+                                <div class="main-featured-blog-box-small animation-up ease-tran">
+                                    <a href="#">
+                                        <img src="./assets/img/blog-dark-image.jpg" class="w-100 rounded-3 mb-4 image-cover" height="240px" alt="Blog Image">
+                                        <p class="color-para-light fw-500 mb-2">By <span class="color-a-dark">Robert</span> | 2 min read</p>
+                                        <h3 class="color-black-a fs-5 fw-semibold">Brands Should Focus on ‘Pull’ Strategies to Attract Consumers</h3>
+                                    </a>
+                                </div>
+                                <div class="main-featured-blog-box-small animation-up ease-tran">
+                                    <a href="#">
+                                        <img src="./assets/img/blog-dark-image.jpg" class="w-100 rounded-3 mb-4 image-cover" height="240px" alt="Blog Image">
+                                        <p class="color-para-light fw-500 mb-2">By <span class="color-a-dark">Robert</span> | 2 min read</p>
+                                        <h3 class="color-black-a fs-5 fw-semibold">Brands Should Focus on ‘Pull’ Strategies to Attract Consumers</h3>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    
 
 
     <!-- =========================
@@ -1485,17 +634,16 @@
     ========================= -->
     <section class="mini-contact py-120">
         <div class="container">
-            <div class="row align-items-center justify-content-between gap-y-24-sm">
-                <div class="col-lg-6">
-                    <h2 class="font-56 fw-bold mb-0 color-white-a text-capitalize">Ready to get started?</h2>
-                    <p class="color-white-a font-20 mt-2 mb-0">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+            <div class="row align-items-center justify-content-around gap-y-24-sm">
+                <div class="col-lg-5">
+                    <h2 class="font-56 fw-bold mb-0 color-white-a text-capitalize">Subscribe to newsletter</h2>
                 </div>
-                <div class="col-lg-4 text-end text-start-sm">
+                <div class="col-lg-4">
+                    <div class="input-icon-button w-100 position-relative mb-2">
+                        <i class="fa fa-envelope fw-normal position-absolute top-50 input-left-icon color-white-a font-20"></i>
+                        <input type="text" class="b-1 placeholder-white no-shadow color-white-a bg-tran w-100 rounded-3" placeholder="Enter your email">
+                    </div>
                     <a href="#" class="button button-md bg-black-a color-white-a fw-bold border-0"><span>Get Started</span> 
-                        <i class="fa fa-arrow-right button-icon button-left-icon" aria-hidden="true"></i>
-                        <i class="fa fa-arrow-right button-icon button-right-icon" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="ms-2 button button-md color-white-a fw-bold"><span>Get Started</span> 
                         <i class="fa fa-arrow-right button-icon button-left-icon" aria-hidden="true"></i>
                         <i class="fa fa-arrow-right button-icon button-right-icon" aria-hidden="true"></i>
                     </a>
