@@ -953,6 +953,14 @@ input.no-shadow{
     background-position: right;
     background-origin: content-box;
 }
+.normal-input-select-2{
+    appearance: none;
+    background: url('../img/icons/select-arrow-2.svg');
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: right;
+    background-origin: content-box;
+}
 /* =========================
     Product Options Right
 =========================  */
@@ -1073,9 +1081,26 @@ input.no-shadow{
 .no-shadow{
     box-shadow: none;
 }
+.blog-table-of-content ul{
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.blog-table-of-content ul ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+.blog-table-of-content ul li a{
+    color: var(--color-para-dark);
+    transition: .3s ease;
+}
 .active-table-of-content{
     font-weight: 600;
     color: var(--color-black-a);
+}
+.blog-table-of-content ul li a:hover{
+    color: var(--color-a-dark);
 }
 /* =========================
 Agency Rankig Slider
@@ -1179,12 +1204,20 @@ Custom Table
     border-bottom: 1px solid rgba(37, 37, 48, 15%);
 }
 
+.single-blog-des p, .single-blog-des span {
+    color: var(--color-para-light);
+    letter-spacing: -.4px;
+    opacity: .7;
+    font-size: 18px !important;
+}
 .blog-navigation-arrow svg{
     stroke: var(--color-a-dark);
 }
 .hover-icon-black:hover svg{
     stroke: var(--color-black-a);
 }
+
+
 
 
 /* =========================
