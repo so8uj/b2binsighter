@@ -123,6 +123,12 @@ Colors and Variable
     width: 40px;
     border: 1px solid rgb(64, 59, 67,10%);
 }
+.icon-button-normal{
+    display: inline-block;
+    padding: 16px 24px;
+    border: 1px solid rgb(64, 59, 67,10%);
+
+}
 
 /* ==========================
 Reusable Elements
@@ -325,6 +331,9 @@ Custom Specing and Font Sizes
 }
 .p-24-20{
     padding: 24px 20px;
+}
+.p-60-48{
+    padding: 60px 48px;
 }
 .p-36-20{
     padding: 36px 20px;
@@ -941,6 +950,9 @@ input.no-shadow{
     border: 1px solid rgba(64, 59, 67,10%);
     box-shadow: none;
 }
+textarea.normal-input{
+    height: unset;
+}
 .normal-input:focus{
     box-shadow: none;
     border-color: var(--color-a-dark);
@@ -961,6 +973,16 @@ input.no-shadow{
     background-position: right;
     background-origin: content-box;
 }
+
+.select-icon-style-2{
+    appearance: none;
+    background: url('../img/icons/select-arrow-3.svg');
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: right;
+    background-origin: content-box;
+}
+
 /* =========================
     Product Options Right
 =========================  */
@@ -1215,6 +1237,30 @@ Custom Table
 }
 .hover-icon-black:hover svg{
     stroke: var(--color-black-a);
+}
+
+
+
+
+/* =========================
+Submit Review 
+=========================  */
+.submit-review-banner::before{
+    background: var(--color-a-light);
+    height: 365px;
+
+}
+.page-breadcrumb .breadcrumb{
+    font-size: 16px;
+}
+.page-breadcrumb .breadcrumb-item, .page-breadcrumb .breadcrumb-item a{
+    color: var(--color-para-dark);
+}
+.page-breadcrumb .breadcrumb-item:hover, .page-breadcrumb .breadcrumb-item a:hover{
+    color: var(--color-a-dark);
+}
+.agency-box-logo-review{
+    width: 180px;
 }
 
 
