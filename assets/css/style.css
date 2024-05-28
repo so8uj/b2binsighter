@@ -60,6 +60,9 @@ Colors and Variable
 .color-b,.hover-color-b:hover{
     color: var(--color-b);
 }
+.color-white-2,.hover-color-white-2:hover{
+    color: var(--color-white-2);
+}
 .color-white-a,.hover-color-white-a:hover{
     color: var(--color-white-a);
 }
@@ -1263,6 +1266,10 @@ Submit Review
     width: 180px;
 }
 
+.star-icon{
+    color: lightgrey;
+    cursor: pointer;
+}
 
 
 

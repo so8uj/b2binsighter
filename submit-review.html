@@ -585,7 +585,7 @@
                                     
                                 </div>
 
-                                <div class="row mb-3">
+                                <div class="row mb-4">
                                     <div class="col-sm-4">
                                         <label for="project_title" class="form-label color-black-a">Project Title</label>
                                         <input type="text" placeholder="Type here" class="form-control normal-input" id="project_title">
@@ -604,10 +604,118 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-lg-4"></div>
-                                    <div class="col-lg-8">
-                                        <label for="review" class="form-label color-black-a">Please write your review</label>
-                                        <textarea type="text" class="form-control normal-input" cols="50" rows="7" id="review"></textarea>
+                                    <div class="col-lg-4">
+                                        <h3 class="font-22 mb-4 fw-500">Please rank the following 1-5 stars. 5 stars being the best</h3>
+
+                                        <div class="d-flex flex-column row-gap-3 pe-3">
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="mb-0">Overall Rating</p>
+                                                <div class="review-rating-items">
+                                                    <div class="rating-container" data-rating="0">
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="mb-0">Communication</p>
+                                                <div class="review-rating-items">
+                                                    <div class="rating-container" data-rating="0">
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="mb-0">Responsiveness</p>
+                                                <div class="review-rating-items">
+                                                    <div class="rating-container" data-rating="0">
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="mb-0">Accuracy of Timeline</p>
+                                                <div class="review-rating-items">
+                                                    <div class="rating-container" data-rating="0">
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="mb-0">Expertise</p>
+                                                <div class="review-rating-items">
+                                                    <div class="rating-container" data-rating="0">
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="mb-0">Value for Money</p>
+                                                <div class="review-rating-items">
+                                                    <div class="rating-container" data-rating="0">
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="mb-0">Accuracy of Cost Estimates</p>
+                                                <div class="review-rating-items">
+                                                    <div class="rating-container" data-rating="0">
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                        <i class="fa fa-star fs-5 star-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="mb-4">
+                                            <label for="review" class="form-label color-black-a">Please write your review</label>
+                                            <textarea type="text" class="form-control normal-input" cols="50" rows="9" id="review"></textarea>
+                                        </div>
+
+                                        <div>
+                                            <button type="button" class="button button-md bg-black-a color-white-a fw-bold border-0"><span>Submit</span> 
+                                                <i class="fa fa-arrow-right button-icon button-left-icon" aria-hidden="true"></i>
+                                                <i class="fa fa-arrow-right button-icon button-right-icon" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+
                                     </div>
                                 </div>
                             </form>
@@ -729,5 +837,6 @@
 
     <!-- Custom Script -->
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/review-star.js"></script>
 </body>
 </html>
