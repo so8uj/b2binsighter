@@ -111,6 +111,9 @@ Colors and Variable
 .border-a-dark,.hover-border-a-dark:hover{
     border-color: var(--color-a-dark);
 }
+.border-color-white-2{
+    border-color: var(--color-white-2);
+}
 
 .hr-divider{
     margin: 32px 0px;
@@ -268,7 +271,9 @@ Reusable Elements
 .border-main{
     border: 1px solid rgba(65, 71, 71,10%);
 }
-
+.border-black-1{
+    border: 1px solid var(--color-black-a);
+}
 .bb-1{
     border-bottom: 1px solid rgba(65, 71, 71,10%);
 }
@@ -304,6 +309,9 @@ Custom Specing and Font Sizes
 }
 .pt-80{
     padding-top: 80px;
+}
+.pb-80{
+    padding-bottom: 80px;
 }
 .py-80{
     padding: 80px 0px;
@@ -1101,24 +1109,52 @@ textarea.normal-input{
     transform: translateY(-8px);
 }
 .placeholder-white::placeholder{
-    color: var(--color-white-a);
+    color: rgb(17, 17, 17,15%);
 }
 .no-shadow{
     box-shadow: none;
 }
+
 .blog-table-of-content ul{
     padding-left: 0px;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+    position: relative;
 }
-.blog-table-of-content ul ul {
-    list-style: disc;
-    padding-left: 40px;
+.blog-table-of-content ul::before , .blog-table-of-content ul li a::before{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    content: '';
+    background: rgb(17, 17, 17,15%);
+    top: 0;
+    left: -9px;
 }
+.blog-table-of-content ul li a::before{
+    background: transparent;
+}
+.blog-share-option{
+
+    border-top: 1px solid rgb(17, 17, 17,15%);;
+    border-bottom: 1px solid rgb(17, 17, 17,15%);;
+}
+
 .blog-table-of-content ul li a{
     color: var(--color-para-dark);
     transition: .3s ease;
+    font-size: 14px;
+    position: relative;
+}
+.blog-table-of-content ul li a:hover:before , .blog-table-of-content ul li a.active::before{
+    background: var(--color-a-dark);
+}
+.blog-table-of-content ul li a.active{
+    color: var(--color-a-dark);
+}
+.toc-wrapper{
+    position: sticky;
+    top: 0;
 }
 .active-table-of-content{
     font-weight: 600;
@@ -1241,7 +1277,10 @@ Custom Table
 .hover-icon-black:hover svg{
     stroke: var(--color-black-a);
 }
-
+.blog-right-sponsor-section .booking-cart-box{
+    height: 190px;
+    padding: 30px 20px;
+}
 
 
 
