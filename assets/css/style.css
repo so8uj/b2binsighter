@@ -340,6 +340,7 @@ Custom Specing and Font Sizes
 .pt-90{
     padding-top: 90px;
 }
+
 .pb-20{
     padding-bottom: 20px;
 }
@@ -1354,6 +1355,45 @@ Single Compay Drtails
 .details-page-social li a{
     width: 100px;
 }
+
+.review-chart{
+	width:90px;
+	height:90px;
+}
+.review-chart svg{
+	stroke-linecap:round;
+}
+.review-chart svg text {
+    font-weight: 700 !important;
+    font-family: "Inter", sans-serif !important
+}
+.normal-box .h-252p{
+    height: 252px;
+}
+.detail-map-container iframe{
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+}
+.empty-content{
+    content: '';
+}
+.new-input-icon-button select{
+    padding-left: 40px;
+
+}
+
+.custom-select-2 {
+    appearance: none;
+    background: url('../img/icons/arrow-down-select.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: right;
+    background-origin: content-box;
+}
+
+
 /* =========================
 Responsive CSS
 =========================  */
