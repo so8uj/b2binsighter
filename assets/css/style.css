@@ -119,6 +119,10 @@ Colors and Variable
     margin: 32px 0px;
     color: rgb(64, 59, 67,20%);
 }
+.hr-main{
+    border-top-color: rgb(17, 17, 17,30%);
+}
+
 
 .center-content{
     display: flex;
@@ -1392,8 +1396,74 @@ Single Compay Drtails
     background-position: right;
     background-origin: content-box;
 }
+.team-bios-image{
+    width: 200px;
+    height: 200px;
+}
+.clients-image-table {
+    width: 100%;
+}
+.clients-image-table tr td img{
+    height: 48px;
+    margin: auto;
+    
+}
 
+.clients-image-table tr td:not(:last-child) {
+    width: 20%;
+    border-right: 1px solid rgba(37, 37, 48, 15%);
+    padding: 30px 0px;
+}
+.clients-image-table tr:first-child td {
+    border-bottom: 1px solid rgba(37, 37, 48, 15%);
+}
+.clients-image-table tr td:not(:first-child){
+    text-align: center;
+}
 
+.review-detail-page{
+    height: 144px;
+}
+.pricing-package-box.single-detail-page{
+    border-color: rgba(37, 37, 48, 15%);
+
+}
+.pricing-package-box.single-detail-page.active-box{
+    border-color: var(--color-a-dark)
+
+}
+
+.single-media-item.slick-slide.slick-active {
+    width: 900px !important;
+}
+.single-media-item.slick-slide.slick-active p {
+    opacity: 1;
+}
+.single-media-item{
+    margin-right: 24px;
+}
+.single-media-item img{
+    height: 470px;
+    width: 100%;
+    object-fit: cover;
+}
+.single-media-item p{
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.media-slick-slider-container {
+    border-radius: 16px;
+    /* overflow-x: hidden; */
+}
+.media-slick-slider-container img{
+    border-radius: 16px;
+}
+.media-slick-slider-container .slick-next{
+    right: 295px;
+}
+.video-review img{
+    height: 220px;
+}
 /* =========================
 Responsive CSS
 =========================  */
