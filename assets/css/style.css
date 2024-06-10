@@ -1841,6 +1841,7 @@ Single Compay Drtails
     align-items: center;
     justify-content: center;
     margin-right: 5px;
+    font-size: 13px;
 }
 
 .default-chart {
@@ -1849,7 +1850,7 @@ Single Compay Drtails
 }
 
 .area-of-expertise-wrapper{
-    height: 450px;
+    height: 455px;
 }
 .area-of-expertise-wrapper .tab-content{
     padding-left: 100px;
@@ -1862,9 +1863,28 @@ Single Compay Drtails
     display: block;     
 }
 
+.custom-tab-switch-buttons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    border: none;
+    background: transparent;
+}
 
+.custom-tab-switch-buttons svg {
+    stroke: var(--color-black-a);
+}
+.custom-tab-switch-buttons:hover svg {
+    stroke: var(--color-a-dark);
+}
 
-
+.tab-next-custom{
+    right: -50px
+}
+.tab-previous-custom{
+    left: -50px;
+}
 
 
 

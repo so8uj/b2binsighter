@@ -1,57 +1,44 @@
-function sliceSize(dataNum, dataTotal) {
-    return (dataNum / dataTotal) * 360;
-}
-function addSlice(sliceSize, pieElement, offset, sliceID, color) {
-    $(pieElement).append("<div class='slice " + sliceID + "'><span></span></div>");
-    var offset = offset - 1;
-    var sizeRotation = -179 + sliceSize;
-    $("." + sliceID).css({
-        "transform": "rotate(" + offset + "deg) translate3d(0,0,0)"
+
+let chart; 
+function CreatePicChart(target_id){
+
+    var data_values = [];
+    var data_bgs = [];
+    var data_labels = [];
+    const ctx = $('#'+target_id);
+
+    $('.'+target_id+' li').each(function(){
+        data_values.push($(this).data('chart-value'));
+        data_bgs.push($(this).data('chart-bg'));
+        data_labels.push($(this).data('chart-labels'));
     });
-    $("." + sliceID + " span").css({
-        "transform": "rotate(" + sizeRotation + "deg) translate3d(0,0,0)",
-        "background-color": color
-    });
-}
-function iterateSlices(sliceSize, pieElement, offset, dataCount, sliceCount, color) {
-    var sliceID = "s" + dataCount + "-" + sliceCount;
-    var maxSize = 179;
-    if (sliceSize <= maxSize) {
-        addSlice(sliceSize, pieElement, offset, sliceID, color);
+    const data = {
+        labels: data_labels,
+        datasets: [{
+          label: 'My First Dataset',
+          data: data_values,
+          backgroundColor: data_bgs,
+          hoverOffset: 4
+        }]
+    };
+    const configuration = {
+        type: 'doughnut',
+        data: data,
+        options:{
+            cutout: "70%",
+            plugins:{
+                legend:{
+                    display: false
+                }
+            }
+        }
+    }
+
+    if (chart) {
+        chart.destroy();
+        chart = new Chart(ctx, configuration);
     } else {
-        addSlice(maxSize, pieElement, offset, sliceID, color);
-        iterateSlices(sliceSize - maxSize, pieElement, offset + maxSize, dataCount, sliceCount + 1, color);
-    }
-}
-async function createPie(dataElement, pieElement) {
-    var listData = [];
-    $(dataElement + " span").each(function () {
-        listData.push(Number($(this).html()));
-    });
-    var listTotal = 0;
-    for (var i = 0; i < listData.length; i++) {
-        listTotal += listData[i];
-    }
-    var offset = 0;
-    var color = [
-
-        "#14B8A6",
-        "#3B82F6",
-        "#6366F1",
-        "#EC4899",
-        "#F59E0B",
-        "#FACC15",
-
-        "balck",
-        "balck",
-        "balck",
-        "balck"
-    ];
-    for (var i = 0; i < listData.length; i++) {
-        var size = sliceSize(listData[i], listTotal);
-        iterateSlices(size, pieElement, offset, i, i, color[i]);
-        $(dataElement + " li:nth-child(" + (i + 1) + ")").css("border-color", color[i]);
-        offset += size;
+        chart = new Chart(ctx, configuration);
     }
 }
 
