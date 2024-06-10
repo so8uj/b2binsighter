@@ -1377,6 +1377,9 @@ textarea.normal-input {
 .placeholder-white::placeholder {
     color: rgb(17, 17, 17, 15%);
 }
+.placeholder-2::placeholder {
+    color: #807E7E;
+}
 
 .no-shadow {
     box-shadow: none;
@@ -1567,8 +1570,6 @@ Custom Table
 .single-blog-des p,
 .single-blog-des span {
     letter-spacing: -.4px;
-    opacity: .7;
-    font-size: 16px !important;
 }
 
 .blog-navigation-arrow svg {
@@ -1888,10 +1889,26 @@ Single Compay Drtails
 
 
 
+/* =========================
+Sign in/up CSS
+=========================  */
+.has-border-middle::before {
+    position: absolute;
+    height: 0.10px;
+    background: rgb(17, 17, 17, 10%);
+    z-index: -1;
+    content: '';
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
+
 
 /* =========================
 Responsive CSS
 =========================  */
+
 /* For 1366 */
 @media screen and (max-width:1390px) {
 
