@@ -1874,10 +1874,10 @@ Single Compay Drtails
 }
 
 .custom-tab-switch-buttons svg {
-    stroke: var(--color-black-a);
-}
-.custom-tab-switch-buttons:hover svg {
     stroke: var(--color-a-dark);
+    }
+    .custom-tab-switch-buttons:hover svg {
+    stroke: var(--color-black-a);
 }
 
 .tab-next-custom{
