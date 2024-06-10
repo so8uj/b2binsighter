@@ -1904,7 +1904,15 @@ Sign in/up CSS
     left: 0px;
 }
 
-
+/* =========================
+About CSS
+=========================  */
+.about-cover-image , .about-story-image{
+    height: 620px;
+}
+.about-page-team img{
+    height: 400px;
+}
 /* =========================
 Responsive CSS
 =========================  */
