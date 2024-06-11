@@ -362,6 +362,9 @@ Reusable Elements
 .bb-1 {
     border-bottom: 1px solid rgba(65, 71, 71, 10%);
 }
+.bt-1 {
+    border-top: 1px solid rgba(65, 71, 71, 10%);
+}
 
 .slider-container {
     width: 1340px;
@@ -1910,9 +1913,14 @@ About CSS
 .about-cover-image , .about-story-image{
     height: 620px;
 }
-.about-page-team img{
+.about-page-team .abut-team-image{
     height: 400px;
 }
+
+.border-main-2{
+    border-top: 1px solid rgb(17, 17, 17, 30%);
+}
+
 /* =========================
 Responsive CSS
 =========================  */
