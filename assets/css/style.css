@@ -1889,9 +1889,20 @@ Single Compay Drtails
 .tab-previous-custom{
     left: -50px;
 }
-
-
-
+.aboutpage-review-image{
+    height: 420px;
+}
+.aboutpage-inhouse-review-slider .slick-prev, 
+.aboutpage-inhouse-review-slider .slick-next{
+    top: 92%;
+    transform: unset !important;
+}
+.aboutpage-inhouse-review-slider .slick-prev{
+    left: 42.5%;
+}
+.aboutpage-inhouse-review-slider .slick-next{
+    right: 48.5%;
+}
 /* =========================
 Sign in/up CSS
 =========================  */
